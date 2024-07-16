@@ -1,27 +1,42 @@
-# ShakebitsPortal
+# Shakebits Portal
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.0.
+## Run the portal
 
-## Development server
+### 1. Install Node.js and Angular
+1. Open https://nodejs.org/en/download/prebuilt-installer install latest version
+2. ```npm doctor``` (everything should be OK)
+3. `npm install @angular/cli@latest -g` 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### 2. Run application
+1. `ng s -o`
 
-## Code scaffolding
+### Recommended plugins for Visual Studio Code
+>**Angular Language Service** Description: Editor services for Angular templates Publisher: Angular
+VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=Angular.ng-template
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+>**Prettier - Code formatter** Description: Code formatter using prettier Publisher: Prettier
+VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
 
-## Build
+### Util commands
+    npm list
+    npm list -g
+    npm install <pkg-name>
+    npm install -g <pkg-name>
+    npm uninstall <pkg-name>
+    npm uninstall -g <pkg-name>
+    npm install (install all dependencies for project)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+    ng help
+    ng s (build and serve application)
+    ng s -o (build and serve app and open it in browser)
+    ng g c (generate new component)
+    ng g s (generate new service)
+    ng s --configuration='development' | 'production' (build and serve using custom configuration)
+    ng build (build and generate runnable in /dist)
+    ng test (running unit tests)
 
-## Running unit tests
+    ng generate module /features/partner --route partners --module features-routing.module
+    ng generate interceptor /core/interceptors/AuthenticationInterceptor
+    ng generate service /core/services/LoadingStatus
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.

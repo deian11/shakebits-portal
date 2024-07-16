@@ -1,0 +1,15 @@
+@import "@styles/styles.scss";
+
+.logo {
+  cursor: pointer;
+  font: 100 40px Roboto, sans-serif;
+  margin-top: -5px;
+  margin-bottom: -5px;
+  color: var(--logo);
+}
+
+.logo:hover {
+cursor: pointer;
+font-size: 41px;
+transition: 0.3s ease-in-out;
+}
