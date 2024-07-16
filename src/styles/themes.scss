@@ -1,0 +1,124 @@
+// @use '@angular/material' as mat;
+
+// @include mat.core();
+
+
+
+// // Define a dark theme
+// $dark-theme: mat.define-theme((
+//   color: (
+//     theme-type: dark,
+//     primary: mat.$violet-palette,
+//   ),
+//   typography: (
+//     brand-family: 'Comic Sans',
+//     bold-weight: 900
+//   ),
+//   density: (
+//     scale: -1
+//   )
+// ));
+
+// // Define a light theme
+// $light-theme: mat.define-theme((
+//   color: (
+//     theme-type: light,
+//     primary: mat.$violet-palette,
+//   ),
+//   typography: (
+//     brand-family: 'Comic Sans',
+//     bold-weight: 900
+//   ),
+//   density: (
+//     scale: -1
+//   )
+// ));
+
+:root {
+    // --logo: #fff;
+    // --font: #fff;
+    // --bg-secondary: #fff;
+    // background-color: #fff;
+    // --bg: #fff;  
+    // --btn-close: invert(1) grayscale(100%) brightness(200%);
+    --logo: #c44900;
+    --font: #efd6ac;
+    --bg-secondary: #183a37;
+    background-color: #04151f;
+    --bg: #04151f;  
+    --btn-close: invert(1) grayscale(100%) brightness(200%);
+}
+[theme="default"] {
+    --logo: #1f1f1f;
+    --font: #1f1f1f;
+    --bg-secondary: #979197;
+    background-color: #edeced;
+    --bg: #edeced;  
+    --btn-close: invert(0) grayscale(100%) brightness(200%);
+    // @include mat.all-component-themes($light-theme);
+}
+[theme="white-orange"] {
+    --logo: #f69833;
+    --font: #14213d;
+    --bg-secondary: #e5e5e5;
+    background-color: #edeced;
+    --bg: #edeced;  
+    --btn-close: invert(1) grayscale(100%) brightness(200%);
+}
+[theme="white-blue"] {
+    --logo: #419bf9;
+    --font: #14213d;
+    --bg-secondary: #e5e5e5;
+    background-color: #edeced;
+    --bg: #edeced;  
+    --btn-close: invert(0) grayscale(100%) brightness(200%);
+}
+[theme="dark-default"] {
+    --logo: #edeced;
+    --font: #edeced;
+    --bg-secondary: #313335;
+    background-color: #1f1f1f;
+    --bg: #1f1f1f;  
+    --btn-close: invert(1) grayscale(100%) brightness(200%);
+}
+[theme="dark-orange-green"] {
+    --logo: #c44900;
+    --font: #efd6ac;
+    --bg-secondary: #183a37;
+    background-color: #04151f;
+    --bg: #04151f;  
+    --btn-close: invert(1) grayscale(100%) brightness(200%);
+}
+[theme="navi-blue"] {
+    --logo: #778da9;
+    --font: #e0e1dd;
+    --bg-secondary: #0d1b2a;
+    background-color: #1b263b;
+    --bg: #1b263b;  
+    --btn-close: invert(1) grayscale(100%) brightness(200%);
+}
+[theme="sky-blue"] {
+    --logo: #E5E1DA;
+    --font: #F6F4EB;
+    --bg-secondary: #4682A9;
+    background-color: #749BC2;
+    --bg: #749BC2;
+    --btn-close: invert(0) grayscale(100%) brightness(200%);
+}
+[theme="sandy"] {
+    --logo: #419bf9;
+    --font: #003049;
+    --bg-secondary: #ccc5b9;
+    background-color: #eae2b7;
+    --bg: #eae2b7;  
+    --btn-close: invert(0) grayscale(100%) brightness(200%);
+}
+[theme="dark-orange-light"] {
+    --logo: #eb5e28;
+    --font: #ccc5b9;
+    --bg-secondary: #252422;
+    background-color: #403d39;
+    --bg: #403d39;  
+    --btn-close: invert(1) grayscale(100%) brightness(200%);
+    // @include mat.all-component-themes($dark-theme);
+}
