@@ -1,0 +1,15 @@
+@import '../styles/styles.scss';
+
+.body {
+  padding-left: 2vw;
+  padding-right: 2vw;
+  
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+
+  background-color: var(--bg);
+}
+
+img {
+  cursor: pointer;
+}

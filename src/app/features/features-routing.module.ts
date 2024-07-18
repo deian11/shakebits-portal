@@ -6,8 +6,11 @@ import { MainLayoutComponent } from "../core/layouts/main-layout/main-layout.com
 
 const routes: Routes = [
     {
-      path: '', component: MainLayoutComponent
+      path: '', component: MainLayoutComponent, children: [
+        { path: 'solutions', loadChildren: () => import('./solutions/solutions.module').then(m => m.SolutionsModule) },
+      ]
     },
+    
     // example Error Layout and redirect all unknown paths to error
     // {
     //   path: 'error',

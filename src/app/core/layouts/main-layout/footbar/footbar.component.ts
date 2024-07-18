@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { ThemeDialogService } from '@shared/dialog/theme-dialog/theme-dialog.service';
 
 @Component({
   selector: 'app-footbar',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrl: './footbar.component.scss'
 })
 export class FootbarComponent {
+
+  themeDialogService = inject(ThemeDialogService);
+
+  openThemeModal(): void {
+    this.themeDialogService.openThemeDialog();
+  }
 
 }
