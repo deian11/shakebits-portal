@@ -5,15 +5,15 @@ import { provideAnimationsAsync } from "@angular/platform-browser/animations/asy
 import { provideHttpClient, withFetch, withInterceptors } from "@angular/common/http";
 import { ErrorLayoutComponent } from "./layouts/error-layout/error-layout.component";
 import { authenticationInterceptorInterceptor } from "./interceptors/authentication-interceptor.interceptor";
+import { MainLayoutModule } from "./layouts/main-layout/main-layout.module";
 
 @NgModule({
     declarations: [
-        ErrorLayoutComponent,
+        ErrorLayoutComponent
     ],
     imports: [
         SharedModule,
-    ],
-    exports: [
+        MainLayoutModule
     ],
     providers: [
         provideClientHydration(),

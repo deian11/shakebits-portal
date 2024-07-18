@@ -9,13 +9,13 @@ import { RouterModule } from "@angular/router";
         CommonModule,
         FormsModule,
         RouterModule,
-        ReactiveFormsModule,
+        ReactiveFormsModule
     ],
     exports: [
         CommonModule,
         FormsModule,
         RouterModule,
-        ReactiveFormsModule,
+        ReactiveFormsModule
     ]
 })
 export class SharedModule { }
