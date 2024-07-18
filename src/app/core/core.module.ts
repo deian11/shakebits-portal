@@ -2,18 +2,16 @@ import { NgModule } from "@angular/core";
 import { SharedModule } from "@shared/shared.module";
 import { provideClientHydration } from "@angular/platform-browser";
 import { provideAnimationsAsync } from "@angular/platform-browser/animations/async";
-import { provideHttpClient, withInterceptors } from "@angular/common/http";
+import { provideHttpClient, withFetch, withInterceptors } from "@angular/common/http";
 import { ErrorLayoutComponent } from "./layouts/error-layout/error-layout.component";
-import { MainLayoutModule } from "./layouts/main-layout/main-layout.module";
 import { authenticationInterceptorInterceptor } from "./interceptors/authentication-interceptor.interceptor";
 
 @NgModule({
     declarations: [
-        ErrorLayoutComponent
+        ErrorLayoutComponent,
     ],
     imports: [
         SharedModule,
-        MainLayoutModule
     ],
     exports: [
     ],
@@ -21,6 +19,7 @@ import { authenticationInterceptorInterceptor } from "./interceptors/authenticat
         provideClientHydration(),
         provideAnimationsAsync(),
         provideHttpClient(
+            withFetch(),
             withInterceptors(
                 [
                     authenticationInterceptorInterceptor
