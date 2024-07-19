@@ -6,14 +6,14 @@ import { MainLayoutRoutingModule } from "./main-layout-routing.module";
 import { FootbarComponent } from "./footbar/footbar.component";
 
 @NgModule({
-    declarations: [
-        NavbarComponent,
-        FootbarComponent,
-        MainLayoutComponent,  
-    ],
     imports: [
         SharedModule,
-        MainLayoutRoutingModule
+        MainLayoutRoutingModule,
     ],
+    declarations: [
+        NavbarComponent,
+        MainLayoutComponent,
+        FootbarComponent
+    ]
 })
 export class MainLayoutModule { }

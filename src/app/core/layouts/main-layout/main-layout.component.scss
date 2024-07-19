@@ -1,15 +1,10 @@
 @import '@styles/styles.scss';
 
-.body {
-  padding-left: 2vw;
-  padding-right: 2vw;
-  
-  padding-top: 2vh;
-  padding-bottom: 2vh;
+.body { 
+  margin-top: 5vh;
+  margin-bottom: 5vh;
 
+  margin-left: 4vh;
+  margin-right: 4vh;
   background-color: var(--bg);
-}
-
-img {
-  cursor: pointer;
 }

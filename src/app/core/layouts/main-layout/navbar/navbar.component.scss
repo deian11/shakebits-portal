@@ -1,15 +1,24 @@
 @import "@styles/styles.scss";
 
+.navbar {
+  margin-left: -8px;
+  margin-right: -8px;
+  margin-top: -8px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 0.1px solid var(--logo);
+}
+
 .logo {
   cursor: pointer;
-  font: 100 40px Roboto, sans-serif;
-  margin-top: -5px;
-  margin-bottom: -5px;
+  font-size: 50px;
+  font-weight: 100;
+  margin-top: -8px;
+  margin-bottom: -10px;
+  margin-left: -3px;
   color: var(--logo);
 }
 
-.logo:hover {
-cursor: pointer;
-font-size: 41px;
-transition: 0.3s ease-in-out;
+p{
+  // font-weight: 100;
 }

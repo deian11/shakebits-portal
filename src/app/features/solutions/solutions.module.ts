@@ -6,12 +6,12 @@ import { SolutionsComponent } from './solutions.component';
 
 
 @NgModule({
-  declarations: [
-    SolutionsComponent
-  ],
   imports: [
     CommonModule,
     SolutionsRoutingModule
+  ],
+  declarations: [
+    SolutionsComponent
   ]
 })
 export class SolutionsModule { }
