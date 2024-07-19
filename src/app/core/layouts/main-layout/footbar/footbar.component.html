@@ -1,13 +1,16 @@
-<div class="footer">
-    <div class="footer-flex-container-left">
-        <a>Services</a>
-        <a>Contact us</a>
+@defer ()
+{
+    <div class="footer">
+        <div class="footer-flex-container-left">
+            <a [routerLink]="'solutions'">Solutions</a>
+            <a [routerLink]="'contact-us'">Contact us</a>
+        </div>
+        <div class="footer-flex-container-center">
+            <a class="copyright">© Shakebits</a>
+        </div>
+        <div class="footer-flex-container-right">
+            <a (click)="openThemeModal()">Themes</a>
+            <a (click)="openRegionModal()">EU</a>
+        </div>
     </div>
-    <div class="footer-flex-container-center">
-        <a class="copyright">© Shakebits</a>
-    </div>
-    <div class="footer-flex-container-right">
-        <a (click)="openThemeModal()">Themes</a>
-        <a>EU</a>
-    </div>
-</div>
+}
