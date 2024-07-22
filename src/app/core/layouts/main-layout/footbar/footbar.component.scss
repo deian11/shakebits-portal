@@ -17,12 +17,12 @@
 }
 
 .footer .footer-flex-container-left{
-  margin-left: 5px;
+  margin-left: 1vh;
   align-self: center;
 }
 .footer .footer-flex-container-left a{
   display: inline-flex;
-  margin-right: 4vw;
+  margin-right: 2vh;
 }
 
 .footer .footer-flex-container-center{
@@ -32,11 +32,11 @@
 
 .footer .footer-flex-container-right{
   text-align: center;
-  margin-right: 5px;
+  margin-right: 1vh;
   align-self: center;
 }
 .footer .footer-flex-container-right a {
-  margin-left: 4vw;
+  margin-left: 2vh;
   color: var(--font);
 }
 .footer .footer-flex-container-right a:hover {

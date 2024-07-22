@@ -4,6 +4,83 @@
   "newProjectRoot": "projects",
   "projects": {
     "shakebits-portal": {
+      "i18n": {
+        "sourceLocale":"en",
+        "locales": {
+          "ro": {
+            "translation":"src/locale/messages.ro.json"
+          },
+          "hu":{
+            "translation":"src/locale/messages.hu.json"
+          },
+          "de":{
+            "translation":"src/locale/messages.de.json"
+          },
+          "fr":{
+            "translation":"src/locale/messages.fr.json"
+          },
+          "es":{
+            "translation":"src/locale/messages.es.json"
+          },
+          "pt":{
+            "translation":"src/locale/messages.pt.json"
+          },
+          "it":{
+            "translation":"src/locale/messages.it.json"
+          },
+          "pl":{
+            "translation":"src/locale/messages.pl.json"
+          },
+          "sr":{
+            "translation":"src/locale/messages.sr.json"
+          },
+          "cs":{
+            "translation":"src/locale/messages.cs.json"
+          },
+          "et":{
+            "translation":"src/locale/messages.et.json"
+          },
+          "el":{
+            "translation":"src/locale/messages.el.json"
+          },
+          "lv":{
+            "translation":"src/locale/messages.lv.json"
+          },
+          "lt":{
+            "translation":"src/locale/messages.lt.json"
+          },
+          "mt":{
+            "translation":"src/locale/messages.mt.json"
+          },
+          "nl":{
+            "translation":"src/locale/messages.nl.json"
+          },
+          "sl":{
+            "translation":"src/locale/messages.sl.json"
+          },
+          "sk":{
+            "translation":"src/locale/messages.sk.json"
+          },
+          "fi":{
+            "translation":"src/locale/messages.fi.json"
+          },
+          "sv":{
+            "translation":"src/locale/messages.sv.json"
+          },
+          "no":{
+            "translation":"src/locale/messages.no.json"
+          },
+          "is":{
+            "translation":"src/locale/messages.is.json"
+          },
+          "tr":{
+            "translation":"src/locale/messages.tr.json"
+          },
+          "uk":{
+            "translation":"src/locale/messages.uk.json"
+          }
+        }
+      },
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -28,7 +105,8 @@
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
-              "zone.js"
+              "zone.js",
+              "@angular/localize/init"
             ],
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
@@ -68,6 +146,78 @@
               "optimization": false,
               "extractLicenses": false,
               "sourceMap": true
+            },
+            "ro":{
+              "localize":["ro"]
+            },
+            "cs":{
+              "localize":["cs"]
+            },
+            "de":{
+              "localize":["de"]
+            },
+            "et":{
+              "localize":["et"]
+            },
+            "es":{
+              "localize":["es"]
+            },
+            "fi":{
+              "localize":["fi"]
+            },
+            "fr":{
+              "localize":["fr"]
+            },
+            "el":{
+              "localize":["el"]
+            },
+            "hu":{
+              "localize":["hu"]
+            },
+            "is":{
+              "localize":["is"]
+            },
+            "it":{
+              "localize":["it"]
+            },
+            "lt":{
+              "localize":["lt"]
+            },
+            "lv":{
+              "localize":["lv"]
+            },
+            "mt":{
+              "localize":["mt"]
+            },
+            "nl":{
+              "localize":["nl"]
+            },
+            "no":{
+              "localize":["no"]
+            },
+            "pl":{
+              "localize":["pl"]
+            },
+            "pt":{
+              "localize":["pt"]
+            },
+            "sr":{
+              "localize":["sr"]
+            },
+            "sl":{
+              "localize":["sl"]
+            },
+            "sk":{
+              "localize":["sk"]
+            },
+            "tr":{
+              "localize":["tr"]
+            },
+            "sv":{
+              "localize":["sv"]
+            },
+            "uk":{
+              "localize":["uk"]
             }
           },
           "defaultConfiguration": "production"
@@ -80,19 +230,97 @@
             },
             "development": {
               "buildTarget": "shakebits-portal:build:development"
+            },
+            "ro": {
+              "buildTarget": "shakebits-portal:build:development,ro"
+            },
+            "cs": {
+              "buildTarget": "shakebits-portal:build:development,cs"
+            },
+            "de": {
+              "buildTarget": "shakebits-portal:build:development,de"
+            },
+            "et": {
+              "buildTarget": "shakebits-portal:build:development,et"
+            },
+            "es": {
+              "buildTarget": "shakebits-portal:build:development,es"
+            },
+            "fi": {
+              "buildTarget": "shakebits-portal:build:development,fi"
+            },
+            "fr": {
+              "buildTarget": "shakebits-portal:build:development,fr"
+            },
+            "el": {
+              "buildTarget": "shakebits-portal:build:development,el"
+            },
+            "hu": {
+              "buildTarget": "shakebits-portal:build:development,hu"
+            },
+            "is": {
+              "buildTarget": "shakebits-portal:build:development,is"
+            },
+            "it": {
+              "buildTarget": "shakebits-portal:build:development,it"
+            },
+            "lt": {
+              "buildTarget": "shakebits-portal:build:development,lt"
+            },
+            "lv": {
+              "buildTarget": "shakebits-portal:build:development,lv"
+            },
+            "mt": {
+              "buildTarget": "shakebits-portal:build:development,mt"
+            },
+            "nl": {
+              "buildTarget": "shakebits-portal:build:development,nl"
+            },
+            "no": {
+              "buildTarget": "shakebits-portal:build:development,no"
+            },
+            "pl": {
+              "buildTarget": "shakebits-portal:build:development,pl"
+            },
+            "pt": {
+              "buildTarget": "shakebits-portal:build:development,pt"
+            },
+            "sr": {
+              "buildTarget": "shakebits-portal:build:development,sr"
+            },
+            "sv": {
+              "buildTarget": "shakebits-portal:build:development,sv"
+            },
+            "sl": {
+              "buildTarget": "shakebits-portal:build:development,sl"
+            },
+            "sk": {
+              "buildTarget": "shakebits-portal:build:development,sk"
+            },
+            "tr": {
+              "buildTarget": "shakebits-portal:build:development,tr"
+            },
+            "uk": {
+              "buildTarget": "shakebits-portal:build:development,uk"
             }
           },
           "defaultConfiguration": "development"
         },
         "extract-i18n": {
-          "builder": "@angular-devkit/build-angular:extract-i18n"
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "buildTarget": "shakebits-portal:build",
+            "outputPath": "src/locale",
+            "format": "json"
+          }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
             "polyfills": [
               "zone.js",
-              "zone.js/testing"
+              "zone.js/testing",
+              "@angular/localize/init"
             ],
             "tsConfig": "tsconfig.spec.json",
             "inlineStyleLanguage": "scss",

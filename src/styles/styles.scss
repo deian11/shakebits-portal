@@ -1,6 +1,5 @@
 @import './themes.scss';
 
-
 $snowman: #fbfbfb;
 $whitey: #f7f7f7;
 $karl: #edeced;
@@ -29,6 +28,7 @@ span {
 a {
     text-decoration: none;
 }
+
 a:hover {
     text-decoration: underline solid 0.1px var(--logo);
     cursor: pointer;
@@ -37,20 +37,25 @@ a:hover {
 .modal-header {
     border-bottom: 0.1px solid var(--font);
 }
+
 .modal-content {
     background-color: var(--bg);
 }
+
 .modal-footer {
     border-top: 0.1px solid var(--font);
 }
+
 .btn-primary {
     background-color: var(--bg-secondary);
     color: var(--font);
     border: none;
 }
+
 .btn-close {
     --bs-btn-close-white-filter: var(--btn-close);
 }
+
 .btn-primary:active {
     background-color: var(--logo);
 }
@@ -60,4 +65,3 @@ button:hover {
     background: var(--logo);
     opacity: 0.8;
 }
-
