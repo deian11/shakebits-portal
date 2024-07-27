@@ -2,15 +2,15 @@
 {
     <div class="footer">
         <div class="footer-flex-container-left">
-            <a [routerLink]="'solutions'">Solutions</a>
-            <a [routerLink]="'contact-us'">Contact us</a>
+            <a [routerLink]="'solutions'" i18n>Our solutions</a>
+            <a [routerLink]="'contact-us'" i18n>Contact us</a>
         </div>
         <div class="footer-flex-container-center">
             <a class="copyright">© Shakebits</a>
         </div>
         <div class="footer-flex-container-right">
-            <a (click)="openThemeModal()">Themes</a>
-            <a (click)="openRegionModal()">EU</a>
+            <a (click)="openThemeModal()" i18n>Themes</a>
+            <a (click)="openRegionModal()" i18n><img src="/flags/{{region()}}.svg" style="height: 18px; margin-bottom: 2px;"/>{{region().toUpperCase()}}</a>
         </div>
     </div>
 }

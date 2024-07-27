@@ -4,11 +4,13 @@ import { MainLayoutComponent } from "./main-layout.component";
 import { SharedModule } from "@shared/shared.module";
 import { MainLayoutRoutingModule } from "./main-layout-routing.module";
 import { FootbarComponent } from "./footbar/footbar.component";
+import { MatButtonModule } from "@angular/material/button";
 
 @NgModule({
     imports: [
         SharedModule,
         MainLayoutRoutingModule,
+        MatButtonModule,
     ],
     declarations: [
         NavbarComponent,

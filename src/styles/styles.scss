@@ -1,4 +1,5 @@
 @import './themes.scss';
+@import '@angular/cdk/overlay-prebuilt.css';
 
 $snowman: #fbfbfb;
 $whitey: #f7f7f7;
@@ -16,9 +17,17 @@ $cornflower-blue: #419bf9;
 
 
 
-p, h1, h2, h3, h4, h5, h6, a, b, span, label, hr, img, svg {
+p, a, b, span, label, hr, img, svg {
     color: var(--font);
-    font-family: monospace;
+    font-family: Roboto, sans-serif;
+    font-weight: 100;
+    margin-bottom: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--font);
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
 }
 
 span {
