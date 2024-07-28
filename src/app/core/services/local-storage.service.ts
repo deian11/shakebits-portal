@@ -5,28 +5,23 @@ import { Inject, Injectable, PLATFORM_ID } from '@angular/core';
   providedIn: 'root'
 })
 export class LocalStorageService {
-
-  private environment;
-
-  constructor(@Inject(PLATFORM_ID) private platformId:Object){
-    this.environment = platformId;
-  }
+  constructor(@Inject(PLATFORM_ID) private platformId:Object){}
 
   public GetItem(key:string)
   {
-    if(isPlatformBrowser(this.environment))
+    if(isPlatformBrowser(this.platformId))
     {
       return localStorage.getItem(key);
     }
-
     return null;
   }
 
   public SetItem(key:string, value:string)
   {
-    if(isPlatformBrowser(this.environment))
+    if(isPlatformBrowser(this.platformId))
     {
       localStorage.setItem(key, value);
-    } 
+    }
   }
+
 }

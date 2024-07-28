@@ -3,45 +3,45 @@
 
     <div class="row">
       <div class="col" id="default">
-        <div class="default" id="default" (click)="setTheme('default')"></div>
+        <div class="default" id="default" (click)="changeTheme(themeOptions.Light)"></div>
         <p i18n>default</p>
       </div>
       <div class="col" id="white-orange">
-        <div class="white-orange" (click)="setTheme('white-orange')"></div>
+        <div class="white-orange" (click)="changeTheme(themeOptions.LightOrange)"></div>
         <p i18n>white orange</p>
       </div>
       <div class="col" id="white-blue">
-        <div class="white-blue" (click)="setTheme('white-blue')"></div>
+        <div class="white-blue" (click)="changeTheme(themeOptions.LightBlue)"></div>
         <p i18n>white blue</p>
       </div>
     </div>
 
     <div class="row">
       <div class="col" id="dark-default">
-        <div class="dark-default" (click)="setTheme('dark-default')"></div>
+        <div class="dark-default" (click)="changeTheme(themeOptions.Dark)"></div>
         <p i18n>dark</p>
       </div>
       <div class="col" id="dark-orange-green" >
-        <div class="dark-orange-green" (click)="setTheme('dark-orange-green')"></div>
+        <div class="dark-orange-green" (click)="changeTheme(themeOptions.DarkOrange)"></div>
         <p i18n>warm blue</p>
       </div>
       <div class="col">
-        <div class="navi-blue" id="navi-blue" (click)="setTheme('navi-blue')"></div>
+        <div class="navi-blue" id="navi-blue" (click)="changeTheme(themeOptions.DarkBlue)"></div>
         <p i18n>blue white</p>
       </div>
     </div>
 
     <div class="row">
       <div class="col" id="sky-blue">
-        <div class="sky-blue" (click)="setTheme('sky-blue')"></div>
+        <div class="sky-blue" (click)="changeTheme(themeOptions.SkyBlue)"></div>
         <p i18n>sky blue</p>
       </div>
       <div class="col" id="sandy">
-        <div class="sandy" (click)="setTheme('sandy')"></div>
+        <div class="sandy" (click)="changeTheme(themeOptions.Sandy)"></div>
         <p i18n>sandy</p>
       </div>
       <div class="col" id="dark-orange-light">
-        <div class="dark-orange-light" (click)="setTheme('dark-orange-light')"></div>
+        <div class="dark-orange-light" (click)="changeTheme(themeOptions.DarkOrangeTwo)"></div>
         <p i18n>dark orange</p>
       </div>
     </div>

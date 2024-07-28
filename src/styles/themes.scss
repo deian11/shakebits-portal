@@ -1,18 +1,12 @@
 :root {
-    // --logo: #fff;
-    // --font: #fff;
-    // --bg-secondary: #fff;
-    // background-color: #fff;
-    // --bg: #fff;  
-    // --btn-close: invert(1) grayscale(100%) brightness(200%);
-    --logo: #c44900;
-    --font: #efd6ac;
-    --bg-secondary: #183a37;
-    background-color: #04151f;
-    --bg: #04151f;  
+    --logo: #fff;
+    --font: #fff;
+    --bg-secondary: #fff;
+    background-color: #fff;
+    --bg: #fff;  
     --btn-close: invert(1) grayscale(100%) brightness(200%);
 }
-[theme="default"] {
+[theme="light"] {
     --logo: #1f1f1f;
     --font: #1f1f1f;
     --bg-secondary: #979197;
@@ -20,7 +14,7 @@
     --bg: #edeced;  
     --btn-close: invert(0) grayscale(100%) brightness(200%);
 }
-[theme="white-orange"] {
+[theme="light-orange"] {
     --logo: #f69833;
     --font: #14213d;
     --bg-secondary: #e5e5e5;
@@ -28,7 +22,7 @@
     --bg: #edeced;  
     --btn-close: invert(1) grayscale(100%) brightness(200%);
 }
-[theme="white-blue"] {
+[theme="light-blue"] {
     --logo: #419bf9;
     --font: #14213d;
     --bg-secondary: #e5e5e5;
@@ -36,7 +30,7 @@
     --bg: #edeced;  
     --btn-close: invert(0) grayscale(100%) brightness(200%);
 }
-[theme="dark-default"] {
+[theme="dark"] {
     --logo: #edeced;
     --font: #edeced;
     --bg-secondary: #313335;
@@ -44,7 +38,7 @@
     --bg: #1f1f1f;  
     --btn-close: invert(1) grayscale(100%) brightness(200%);
 }
-[theme="dark-orange-green"] {
+[theme="dark-orange"] {
     --logo: #c44900;
     --font: #efd6ac;
     --bg-secondary: #183a37;
@@ -52,7 +46,7 @@
     --bg: #04151f;  
     --btn-close: invert(1) grayscale(100%) brightness(200%);
 }
-[theme="navi-blue"] {
+[theme="dark-blue"] {
     --logo: #778da9;
     --font: #e0e1dd;
     --bg-secondary: #0d1b2a;
@@ -76,7 +70,7 @@
     --bg: #eae2b7;  
     --btn-close: invert(0) grayscale(100%) brightness(200%);
 }
-[theme="dark-orange-light"] {
+[theme="dark-orange-two"] {
     --logo: #eb5e28;
     --font: #ccc5b9;
     --bg-secondary: #252422;
