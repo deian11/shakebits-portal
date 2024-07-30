@@ -24,13 +24,16 @@
     ],
     "paths": {
       "@styles/*": [
-        "./src/styles/*"
+        "./src/styles/*",
       ],
       "@shared/*": [
-        "./src/app/shared/*"
+        "./src/app/shared/*",
       ],
       "@dialog/*": [
-        "./src/app/dialog/*"
+        "./src/app/dialog/*",
+      ],
+      "@models/*": [
+        "./src/app/core/models/*",
       ],
     },
   },

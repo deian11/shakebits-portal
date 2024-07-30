@@ -1,12 +1,129 @@
-<h2 mat-dialog-title>Hi {{data.name}}</h2>
+<h2 mat-dialog-title>Regions</h2>
 <mat-dialog-content>
-  <p>What's your favorite animal?</p>
-  <mat-form-field>
-    <mat-label>Favorite Animal</mat-label>
-    <input matInput [(ngModel)]="animal" />
-  </mat-form-field>
+  
+  <div class="row">
+    <div class="col" id="en">
+      <img class="country" src="/flags/en.svg" (click)="setRegion('en')" />
+      <p i18n>English</p>
+    </div>
+    <div class="col" id="ro">
+      <img class="country" src="/flags/ro.svg" (click)="setRegion('ro')" />
+      <p i18n>Romanian</p>
+    </div>
+    <div class="col" id="fr">
+      <img class="country" src="/flags/fr.svg" (click)="setRegion('fr')" />
+      <p i18n>French</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col" id="de">
+      <img class="country" src="/flags/de.svg" (click)="setRegion('de')" />
+      <p i18n>German</p>
+    </div>
+    <div class="col" id="it">
+      <img class="country" src="/flags/it.svg" (click)="setRegion('it')" />
+      <p i18n>Italian</p>
+    </div>
+    <div class="col" id="es">
+      <img class="country" src="/flags/es.svg" (click)="setRegion('es')" />
+      <p i18n>Spanish</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col" id="no">
+      <img class="country" src="/flags/no.svg" (click)="setRegion('no')" />
+      <p i18n>Norwegian</p>
+    </div>
+    <div class="col" id="fi">
+      <img class="country" src="/flags/fi.svg" (click)="setRegion('fi')" />
+      <p i18n>Finnish</p>
+    </div>
+    <div class="col" id="et">
+      <img class="country" src="/flags/et.svg" (click)="setRegion('et')" />
+      <p i18n>Estonian</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col" id="lt">
+      <img class="country" src="/flags/lt.svg" (click)="setRegion('lt')" />
+      <p i18n>Lithuanian</p>
+    </div>
+    <div class="col" id="lv">
+      <img class="country" src="/flags/lv.svg" (click)="setRegion('lv')" />
+      <p i18n>Latvian</p>
+    </div>
+    <div class="col" id="el">
+      <img class="country" src="/flags/el.svg" (click)="setRegion('el')" />
+      <p i18n>Greek</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col" id="sv">
+      <img class="country" src="/flags/sv.svg" (click)="setRegion('sv')" />
+      <p i18n>Swedish</p>
+    </div>
+    <div class="col" id="nl">
+      <img class="country" src="/flags/nl.svg" (click)="setRegion('nl')" />
+      <p i18n>Dutch</p>
+    </div>
+    <div class="col" id="pt">
+      <img class="country" src="/flags/pt.svg" (click)="setRegion('pt')" />
+      <p i18n>Portuguese</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col" id="sl">
+      <img class="country" src="/flags/si.svg" (click)="setRegion('sl')" />
+      <p i18n>Slovenian</p>
+    </div>
+    <div class="col" id="sk">
+      <img class="country" src="/flags/sk.svg" (click)="setRegion('sk')" />
+      <p i18n>Slovakian</p>
+    </div>
+    <div class="col" id="sr">
+      <img class="country" src="/flags/sr.svg" (click)="setRegion('sr')" />
+      <p i18n>Serbian</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col" id="tr">
+      <img class="country" src="/flags/tr.svg" (click)="setRegion('tr')" />
+      <p i18n>Turkish</p>
+    </div>
+    <div class="col" id="uk">
+      <img class="country" src="/flags/uk.svg" (click)="setRegion('uk')" />
+      <p i18n>Ukrainian</p>
+    </div>
+    <div class="col" id="pl">
+      <img class="country" src="/flags/pl.svg" (click)="setRegion('pl')" />
+      <p i18n>Polish</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col" id="is">
+      <img class="country" src="/flags/is.svg" (click)="setRegion('is')" />
+      <p i18n>Icelandic</p>
+    </div>
+    <div class="col" id="hu">
+      <img class="country" src="/flags/hu.svg" (click)="setRegion('hu')" />
+      <p i18n>Hungarian</p>
+    </div>
+    <div class="col" id="mt">
+      <img class="country" src="/flags/mt.svg" (click)="setRegion('mt')" />
+      <p i18n>Maltese</p>
+    </div>
+  </div>
+
 </mat-dialog-content>
+
 <mat-dialog-actions>
   <button mat-button (click)="onNoClick()">No Thanks</button>
-  <button mat-button [mat-dialog-close]="animal()" cdkFocusInitial>Ok</button>
 </mat-dialog-actions>
+

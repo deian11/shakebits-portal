@@ -1,15 +1,20 @@
 @import '@styles/styles.scss';
 
-
 p {
     text-align: center;
     font-size: 12px;
+    cursor: pointer;
 }
 
+.col {
+    text-align: center;
+    width: 33%;
+    margin: 2vh;
+}
 
 .default {
-    width: calc(20px + 4vh);
-    height: calc(20px + 4vh);
+    width: calc(20px + 5vh);
+    height: calc(20px + 5vh);
     background-image: conic-gradient(#1f1f1f, #1f1f1f, #979197, #edeced);
     border-radius: 5%;
     cursor: pointer;
@@ -22,8 +27,8 @@ p {
 // --bg: #edeced; 
 
 .white-orange {
-    width: calc(20px + 4vh);
-    height: calc(20px + 4vh);
+    width: calc(20px + 5vh);
+    height: calc(20px + 5vh);
     background-image: conic-gradient(#f69833, #14213d, #e5e5e5, #edeced);
     border-radius: 5%;
     cursor: pointer;
@@ -37,8 +42,8 @@ p {
 // --btn-close: invert(1) grayscale(100%) brightness(200%);
 
 .white-blue {
-    width: calc(20px + 4vh);
-    height: calc(20px + 4vh);
+    width: calc(20px + 5vh);
+    height: calc(20px + 5vh);
     background-image: conic-gradient(#419bf9, #14213d, #e5e5e5, #edeced);
     border-radius: 5%;
     cursor: pointer;
@@ -51,8 +56,8 @@ p {
 // --bg: #edeced;  
 
 .dark-default {
-    width: calc(20px + 4vh);
-    height: calc(20px + 4vh);
+    width: calc(20px + 5vh);
+    height: calc(20px + 5vh);
     background-image: conic-gradient(#edeced, #edeced, #313335, #1f1f1f);
     border-radius: 5%;
     margin-top: 2vh;
@@ -66,8 +71,8 @@ p {
 // --bg: #1f1f1f; 
 
 .dark-yellow-green {
-    width: calc(20px + 4vh);
-    height: calc(20px + 4vh);
+    width: calc(20px + 5vh);
+    height: calc(20px + 5vh);
     background-image: conic-gradient(#d1ac00, #faf4d3, #004643, #0c1618);
     border-radius: 5%;
     margin-top: 2vh;
@@ -81,8 +86,8 @@ p {
 // --bg: #0c1618;
 
 .dark-orange-green {
-    width: calc(20px + 4vh);
-    height: calc(20px + 4vh);
+    width: calc(20px + 5vh);
+    height: calc(20px + 5vh);
     background-image: conic-gradient(#c44900, #efd6ac, #183a37, #04151f);
     border-radius: 5%;
     margin-top: 2vh;
@@ -96,8 +101,8 @@ p {
 // --bg: #04151f;
 
 .navi-blue {
-    width: calc(20px + 4vh);
-    height: calc(20px + 4vh);
+    width: calc(20px + 5vh);
+    height: calc(20px + 5vh);
     background-image: conic-gradient(#778da9, #e0e1dd, #0d1b2a, #1b263b);
     border-radius: 5%;
     margin-top: 2vh;
@@ -111,8 +116,8 @@ p {
 // --bg: #1b263b;
 
 .sky-blue {
-    width: calc(20px + 4vh);
-    height: calc(20px + 4vh);
+    width: calc(20px + 5vh);
+    height: calc(20px + 5vh);
     background-image: conic-gradient(#419bf9, #f1faee, #457b9d, #a8dadc);
     border-radius: 5%;
     margin-top: 2vh;
@@ -126,8 +131,8 @@ p {
 // --bg: #a8dadc;
 
 .sandy {
-    width: calc(20px + 4vh);
-    height: calc(20px + 4vh);
+    width: calc(20px + 5vh);
+    height: calc(20px + 5vh);
     background-image: conic-gradient(#419bf9, #003049, #ccc5b9, #eae2b7);
     border-radius: 5%;
     margin-top: 2vh;
@@ -141,8 +146,8 @@ p {
 // --bg: #eae2b7;  
 
 .dark-orange-light {
-    width: calc(20px + 4vh);
-    height: calc(20px + 4vh);
+    width: calc(20px + 5vh);
+    height: calc(20px + 5vh);
     background-image: conic-gradient(#eb5e28, #ccc5b9, #252422, #403d39);
     border-radius: 5%;
     margin-top: 2vh;
