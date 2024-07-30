@@ -1,0 +1,8 @@
+//scp -r -P 22 /home/deian/Repository/shakebits-web/dist/shakebits-web/browser/* root@157.90.24.102:/var/www/html/
+
+// ROMANIA
+
+
+// rsync -av -e ssh --exclude='*.svg' /home/deian/Repository/shakebits-portal/dist/shakebits-portal/browser/* root@157.90.24.102:/var/www/html/
+
+// rsync -av -e ssh /home/deian/Repository/shakebits-portal/public/flags/* root@157.90.24.102:/var/www/html/flags/ FLAGS

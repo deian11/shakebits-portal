@@ -54,6 +54,8 @@ export class RegionDialogComponent {
   setRegion(region: string)
   {
     this._localStorage.SetItem(LOCAL_STORAGE_PREFERRED_REGION, region);
+    console.log("HERE: ");
+    console.log(BaseUrl.home());
     window.location.href = BaseUrl.home();
   }
 

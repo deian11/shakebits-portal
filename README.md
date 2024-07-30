@@ -43,4 +43,5 @@ ng generate service /core/services/LoadingStatus
 
 `ng add @angular/localize` add library <br>
 `ng extract-i18n --output-path src/locale` 
+`ng build --localize`
 
