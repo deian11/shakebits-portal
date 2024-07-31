@@ -145,265 +145,121 @@
             "development": {
               "optimization": false,
               "extractLicenses": false,
-              "sourceMap": true,
-              "fileReplacements": [
-                {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.development.ts"
-                }
-              ]
+              "sourceMap": true
             },
             "ro":{
               "localize": [
                 "ro"
-              ],
-              "fileReplacements": [
-                {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.ro.ts"
-                }
               ]
             },
             "de":{
               "localize": [
                 "de"
-              ],
-              "fileReplacements": [
-                {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.de.ts"
-                }
               ]
             },
             "et":{
               "localize": [
                 "et"
-              ],
-              "fileReplacements": [
-                {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.et.ts"
-                }
               ]
             },
             "es":{
               "localize": [
                 "es"
-              ],
-              "fileReplacements": [
-                {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.es.ts"
-                }
               ]
             },
             "fi":{
               "localize": [
                 "fi"
-              ],
-              "fileReplacements": [
-                {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.fi.ts"
-                }
               ]
             },
             "fr":{
               "localize": [
                 "fr"
-              ],
-              "fileReplacements": [
-                {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.fr.ts"
-                }
               ]
             },
             "el":{
               "localize": [
                 "el"
-              ],
-              "fileReplacements": [
-                {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.el.ts"
-                }
               ]
             },
             "hu":{
               "localize": [
                 "hu"
-              ],
-              "fileReplacements": [
-                {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.hu.ts"
-                }
               ]
             },
             "is":{
               "localize": [
                 "is"
-              ],
-              "fileReplacements": [
-                {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.is.ts"
-                }
               ]
             },
             "it":{
               "localize": [
                 "it"
-              ],
-              "fileReplacements": [
-                {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.it.ts"
-                }
               ]
             },
             "lt":{
               "localize": [
                 "lt"
-              ],
-              "fileReplacements": [
-                {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.lt.ts"
-                }
               ]
             },
             "lv":{
               "localize": [
                 "lv"
-              ],
-              "fileReplacements": [
-                {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.lv.ts"
-                }
               ]
             },
             "mt":{
               "localize": [
                 "mt"
-              ],
-              "fileReplacements": [
-                {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.mt.ts"
-                }
               ]
             },
             "nl":{
               "localize": [
                 "nl"
-              ],
-              "fileReplacements": [
-                {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.nl.ts"
-                }
               ]
             },
             "no":{
               "localize": [
                 "no"
-              ],
-              "fileReplacements": [
-                {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.no.ts"
-                }
               ]
             },
             "pl":{
               "localize": [
                 "pl"
-              ],
-              "fileReplacements": [
-                {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.pl.ts"
-                }
               ]
             },
             "pt":{
               "localize": [
                 "pt"
-              ],
-              "fileReplacements": [
-                {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.pt.ts"
-                }
               ]
             },
             "sr":{
               "localize": [
                 "sr"
-              ],
-              "fileReplacements": [
-                {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.sr.ts"
-                }
               ]
             },
             "sl":{
               "localize": [
                 "sl"
-              ],
-              "fileReplacements": [
-                {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.sl.ts"
-                }
               ]
             },
             "sk":{
               "localize": [
                 "sk"
-              ],
-              "fileReplacements": [
-                {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.sk.ts"
-                }
               ]
             },
             "tr":{
               "localize": [
                 "tr"
-              ],
-              "fileReplacements": [
-                {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.tr.ts"
-                }
               ]
             },
             "sv":{
               "localize": [
                 "sv"
-              ],
-              "fileReplacements": [
-                {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.sv.ts"
-                }
               ]
             },
             "uk":{
               "localize": [
                 "uk"
-              ],
-              "fileReplacements": [
-                {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.uk.ts"
-                }
               ]
             }
           },

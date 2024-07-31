@@ -3,7 +3,7 @@ import { LocalStorageService } from './core/services/local-storage.service';
 import { LOCAL_STORAGE_PREFERRED_REGION, LOCAL_STORAGE_PREFERRED_THEME } from './core/models/general-constants';
 import { ThemeService } from './core/services/theme.service';
 import { Theme } from './core/models/theme-constants';
-import { regions } from '@models/region-constants';
+import { REGIONS } from '@models/region-constants';
 import { BaseUrl } from '@models/urls.models';
 
 @Component({
@@ -20,13 +20,12 @@ export class AppComponent {
   {
     afterRender( () =>
     {
-      this.themeHandle();
       this.setRegion();
+      this.setTheme();
     });
-
   }
 
-  private themeHandle() {
+  private setTheme() {
     let localStoragePreferredTheme = this._localStorage.GetItem(LOCAL_STORAGE_PREFERRED_THEME);
     if (localStoragePreferredTheme === null) {
       if (window.matchMedia) {
@@ -53,24 +52,21 @@ export class AppComponent {
 
     if(region === null)
     {
-      console.log("Preferred region not exist.");
       return;
     }
 
     if(window.location.pathname[1].toLocaleLowerCase() === region[0].toLocaleLowerCase() &&
     window.location.pathname[2].toLocaleLowerCase() === region[1].toLocaleLowerCase())
     {
-      console.log("user are in the corect page, current page equal local storage preferred region: RETURN");
       return;
     }
 
-    if(regions[region] === undefined)
+    if(REGIONS[region] === undefined)
     {
-      console.log("Preferred region wrong format.");
       return;
     }
 
-    window.location.href = BaseUrl.redirectToHello(region);
+    window.location.href = BaseUrl.redirect(region);
   }
 
 }

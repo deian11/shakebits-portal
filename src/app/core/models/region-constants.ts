@@ -1,110 +1,110 @@
-type Region = {
+export type Region = {
     regionCode: string;
     regionName: string;
 }
 
-export const regions: { [key: string]: Region } = {};
+export const REGIONS: { [key: string]: Region } = {};
 
-regions['en'] = {
+REGIONS['en'] = {
     regionCode: 'en',
     regionName: 'English'
 };
-regions['ro'] = {
+REGIONS['ro'] = {
     regionCode: 'ro',
     regionName: 'Romanian'
 };
-regions['fr'] = {
+REGIONS['fr'] = {
     regionCode: 'fr',
     regionName: 'French'
 };
 
-regions['de'] = {
+REGIONS['de'] = {
     regionCode: 'de',
     regionName: 'German'
 };
-regions['it'] = {
+REGIONS['it'] = {
     regionCode: 'it',
     regionName: 'Italian'
 };
-regions['es'] = {
+REGIONS['es'] = {
     regionCode: 'es',
     regionName: 'Spanish'
 };
 
-regions['no'] = {
+REGIONS['no'] = {
     regionCode: 'no',
     regionName: 'Norwegian'
 };
-regions['fi'] = {
+REGIONS['fi'] = {
     regionCode: 'fi',
     regionName: 'Finnish'
 };
-regions['et'] = {
+REGIONS['et'] = {
     regionCode: 'et',
     regionName: 'Estonian'
 };
 
-regions['lt'] = {
+REGIONS['lt'] = {
     regionCode: 'lt',
     regionName: 'Lithuanian'
 };
-regions['lv'] = {
+REGIONS['lv'] = {
     regionCode: 'lv',
     regionName: 'Latvian'
 };
-regions['el'] = {
+REGIONS['el'] = {
     regionCode: 'el',
     regionName: 'Greek'
 };
 
-regions['sv'] = {
+REGIONS['sv'] = {
     regionCode: 'sv',
     regionName: 'Swedish'
 };
-regions['nl'] = {
+REGIONS['nl'] = {
     regionCode: 'nl',
     regionName: 'Dutch'
 };
-regions['pt'] = {
+REGIONS['pt'] = {
     regionCode: 'pt',
     regionName: 'Portuguese'
 };
 
-regions['sl'] = {
+REGIONS['sl'] = {
     regionCode: 'sl',
     regionName: 'Slovenian'
 };
-regions['sk'] = {
+REGIONS['sk'] = {
     regionCode: 'sk',
     regionName: 'Slovakian'
 };
-regions['sr'] = {
+REGIONS['sr'] = {
     regionCode: 'sr',
     regionName: 'Serbian'
 };
 
-regions['tr'] = {
+REGIONS['tr'] = {
     regionCode: 'tr',
     regionName: 'Turkish'
 };
-regions['uk'] = {
+REGIONS['uk'] = {
     regionCode: 'uk',
     regionName: 'Ukrainian'
 };
-regions['pl'] = {
+REGIONS['pl'] = {
     regionCode: 'pl',
     regionName: 'Polish'
 };
 
-regions['is'] = {
+REGIONS['is'] = {
     regionCode: 'is',
     regionName: 'Icelandic'
 };
-regions['hu'] = {
+REGIONS['hu'] = {
     regionCode: 'hu',
     regionName: 'Hungarian'
 };
-regions['mt'] = {
+REGIONS['mt'] = {
     regionCode: 'mt',
     regionName: 'Maltese'
 };

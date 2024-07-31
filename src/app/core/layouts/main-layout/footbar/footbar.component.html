@@ -10,7 +10,7 @@
         </div>
         <div class="footer-flex-container-right">
             <a (click)="openThemeModal()" i18n>Themes</a>
-            <a (click)="openRegionModal()" i18n><img src="/flags/{{region()}}.svg" style="height: 18px; margin-bottom: 2px;"/>{{region().toUpperCase()}}</a>
+            <a (click)="openRegionModal()" i18n><img src="/flags/{{region?.[0]?.regionCode}}.svg" style="height: 18px; margin-bottom: 2px;"/>{{region?.[0]?.regionName}}</a>
         </div>
     </div>
 }

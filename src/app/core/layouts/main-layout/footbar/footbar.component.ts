@@ -1,6 +1,7 @@
 import { Component, inject, model, signal } from '@angular/core';
 import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 import { ComponentType } from '@angular/cdk/portal';
+import { RegionService } from '../../../services/region.service';
 
 @Component({
   selector: 'app-footbar',
@@ -9,9 +10,11 @@ import { ComponentType } from '@angular/cdk/portal';
 })
 export class FootbarComponent {
   private dialog: MatDialog = inject(MatDialog);
+  private readonly _regionService = inject(RegionService);
+
   readonly animal = signal('');
   readonly name = model('');
-  protected region = signal('fr');
+  protected region = this._regionService.GetCurrentRegion();
 
   async openThemeModal(): Promise<MatDialogRef<any>> {
     let module = await import('@dialog/theme-dialog/theme-dialog.component');
