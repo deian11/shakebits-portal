@@ -1,5 +1,5 @@
 @import './themes.scss';
-@import '@angular/cdk/overlay-prebuilt.css';
+
 
 $snowman: #fbfbfb;
 $whitey: #f7f7f7;
@@ -42,34 +42,7 @@ a:hover {
     cursor: pointer;
 }
 
-.modal-header {
-    border-bottom: 0.1px solid var(--font);
-}
-
-.modal-content {
-    background-color: var(--bg);
-}
-
-.modal-footer {
-    border-top: 0.1px solid var(--font);
-}
-
-.btn-primary {
-    background-color: var(--bg-secondary);
-    color: var(--font);
-    border: none;
-}
-
-.btn-close {
-    --bs-btn-close-white-filter: var(--btn-close);
-}
-
-.btn-primary:active {
-    background-color: var(--logo);
-}
-
-button:hover {
-    border-color: var(--logo);
-    background: var(--logo);
-    opacity: 0.8;
-}
+// button:hover {
+//     border: solid 1px var(--logo);
+//     opacity: 0.5;
+// }

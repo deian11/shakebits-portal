@@ -45,3 +45,9 @@ ng generate service /core/services/LoadingStatus
 `ng extract-i18n --output-path src/locale` 
 `ng build --localize`
 
+
+### Generate new Angular M3 Theme
+
+https://material-foundation.github.io/material-theme-builder/
+
+`ng g @angular/material:m3-theme` paste hex colors and name finally `src/styles/velvet-`

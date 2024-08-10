@@ -6,7 +6,6 @@ import { provideHttpClient, withFetch, withInterceptors } from "@angular/common/
 import { ErrorLayoutComponent } from "./layouts/error-layout/error-layout.component";
 import { authenticationInterceptorInterceptor } from "./interceptors/authentication-interceptor.interceptor";
 import { MainLayoutModule } from "./layouts/main-layout/main-layout.module";
-import { ThemeService } from "./services/theme.service";
 
 @NgModule({
     declarations: [
@@ -14,7 +13,7 @@ import { ThemeService } from "./services/theme.service";
     ],
     imports: [
         SharedModule,
-        MainLayoutModule
+        MainLayoutModule,
     ],
     providers: [
         provideClientHydration(),
@@ -27,7 +26,6 @@ import { ThemeService } from "./services/theme.service";
                 ]
             )
         ),
-        ThemeService,
     ]
 })
 export class CoreModule { }

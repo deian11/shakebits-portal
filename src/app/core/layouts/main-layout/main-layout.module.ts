@@ -7,15 +7,15 @@ import { FootbarComponent } from "./footbar/footbar.component";
 import { MatButtonModule } from "@angular/material/button";
 
 @NgModule({
+    declarations: [
+        NavbarComponent,
+        MainLayoutComponent,
+        FootbarComponent,
+    ],
     imports: [
         SharedModule,
         MainLayoutRoutingModule,
         MatButtonModule,
     ],
-    declarations: [
-        NavbarComponent,
-        MainLayoutComponent,
-        FootbarComponent
-    ]
 })
 export class MainLayoutModule { }

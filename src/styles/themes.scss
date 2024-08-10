@@ -1,80 +1,105 @@
+@use '@angular/material' as mat;
+
+@use './teflon-m3-theme.scss';
+@use './blue-m3-theme.scss';
+
+@include mat.core();
+
+
+
+$light-surface: #f9f9ff;
+$light-inverse-surface: #2e3036;
+$light-surface-container-high: #e7e8ee;
+
 :root {
     --logo: #fff;
     --font: #fff;
     --bg-secondary: #fff;
     background-color: #fff;
-    --bg: #fff;  
-    --btn-close: invert(1) grayscale(100%) brightness(200%);
+    --bg: #fff;
 }
 [theme="light"] {
     --logo: #1f1f1f;
     --font: #1f1f1f;
     --bg-secondary: #979197;
     background-color: #edeced;
-    --bg: #edeced;  
-    --btn-close: invert(0) grayscale(100%) brightness(200%);
+    --bg: #edeced;
+
+    @include mat.all-component-themes(teflon-m3-theme.$light-theme);
 }
 [theme="light-orange"] {
     --logo: #f69833;
     --font: #14213d;
     --bg-secondary: #e5e5e5;
     background-color: #edeced;
-    --bg: #edeced;  
-    --btn-close: invert(1) grayscale(100%) brightness(200%);
+    --bg: #edeced;
 }
+
+// SKY
 [theme="light-blue"] {
-    --logo: #419bf9;
-    --font: #14213d;
-    --bg-secondary: #e5e5e5;
-    background-color: #edeced;
-    --bg: #edeced;  
-    --btn-close: invert(0) grayscale(100%) brightness(200%);
+    --bg: #{mat.get-theme-color(blue-m3-theme.$light-theme, neutral, 98)}; //SURFACE BRIGHT
+    --bg-secondary: #{mat.get-theme-color(blue-m3-theme.$light-theme, neutral, 87)}; //SURFACE DIM
+    --font: #{mat.get-theme-color(blue-m3-theme.$light-theme, neutral, 10)}; // ON SURFACE
+    --logo: #{mat.get-theme-color(blue-m3-theme.$light-theme, primary, 40)}; // PRIMARY
+
+    background-color: var(--bg);
+    @include mat.all-component-themes(blue-m3-theme.$light-theme);
+
+    // @media (prefers-color-scheme: dark) {
+    // }
+}
+[theme="dark-blue"] {
+    --bg: #{mat.get-theme-color(blue-m3-theme.$light-theme, neutral, 6)}; //SURFACE BRIGHT
+    --bg-secondary: #{mat.get-theme-color(blue-m3-theme.$light-theme, neutral, 4)}; //SURFACE DIM
+    --font: #{mat.get-theme-color(blue-m3-theme.$light-theme, neutral-variant, 80)}; // ON SURFACE VAR CUSTOM 
+    --logo: #{mat.get-theme-color(blue-m3-theme.$light-theme, primary, 80)}; // PRIMARY
+
+    @include mat.all-component-themes(blue-m3-theme.$dark-theme);
+    background-color: var(--bg);
 }
 [theme="dark"] {
     --logo: #edeced;
     --font: #edeced;
     --bg-secondary: #313335;
     background-color: #1f1f1f;
-    --bg: #1f1f1f;  
-    --btn-close: invert(1) grayscale(100%) brightness(200%);
+    --bg: #1f1f1f;
+    
+    @include mat.all-component-themes(teflon-m3-theme.$dark-theme);
 }
 [theme="dark-orange"] {
     --logo: #c44900;
     --font: #efd6ac;
     --bg-secondary: #183a37;
     background-color: #04151f;
-    --bg: #04151f;  
-    --btn-close: invert(1) grayscale(100%) brightness(200%);
+    --bg: #04151f;
 }
-[theme="dark-blue"] {
-    --logo: #778da9;
-    --font: #e0e1dd;
-    --bg-secondary: #0d1b2a;
-    background-color: #1b263b;
-    --bg: #1b263b;  
-    --btn-close: invert(1) grayscale(100%) brightness(200%);
-}
+// [theme="dark-blue"] {
+//     --logo: #b1cbff; // primary
+//     --font: #e2e2e9; // inverse surface
+//     --bg-secondary: #282a2f; //surface container high
+//     --bg: #111318; //surface
+
+//     @include mat.all-component-themes(blue-m3-theme.$dark-theme);
+//     background-color: var(--bg);
+// }
 [theme="sky-blue"] {
     --logo: #E5E1DA;
     --font: #F6F4EB;
     --bg-secondary: #4682A9;
     background-color: #749BC2;
     --bg: #749BC2;
-    --btn-close: invert(0) grayscale(100%) brightness(200%);
 }
 [theme="sandy"] {
     --logo: #419bf9;
     --font: #003049;
     --bg-secondary: #ccc5b9;
     background-color: #eae2b7;
-    --bg: #eae2b7;  
-    --btn-close: invert(0) grayscale(100%) brightness(200%);
+    --bg: #eae2b7;
 }
 [theme="dark-orange-two"] {
     --logo: #eb5e28;
     --font: #ccc5b9;
     --bg-secondary: #252422;
     background-color: #403d39;
-    --bg: #403d39;  
-    --btn-close: invert(1) grayscale(100%) brightness(200%);
+    --bg: #403d39;
 }

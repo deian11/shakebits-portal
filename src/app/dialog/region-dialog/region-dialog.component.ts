@@ -1,4 +1,4 @@
-import { afterRender, Component, inject, model } from '@angular/core';
+import { afterRender, Component, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MAT_DIALOG_DATA, MatDialogActions, MatDialogClose, MatDialogContent, MatDialogRef, MatDialogTitle } from '@angular/material/dialog';
@@ -33,7 +33,6 @@ export class RegionDialogComponent {
   readonly _localStorage = inject(LocalStorageService);
   readonly dialogRef = inject(MatDialogRef<RegionDialogComponent>);
   readonly data = inject<DialogData>(MAT_DIALOG_DATA);
-  readonly animal = model(this.data.animal);
 
   onNoClick(): void {
     this.dialogRef.close();

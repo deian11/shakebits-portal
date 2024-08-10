@@ -17,13 +17,12 @@
 }
 
 .footer .footer-flex-container-left{
-  margin-left: 1vh;
   align-self: center;
 }
 
 .footer .footer-flex-container-left a{
   display: inline-flex;
-  margin-right: 2vh;
+  margin-right: 3vw;
 }
 
 .footer .footer-flex-container-center{
@@ -32,18 +31,20 @@
 }
 
 .footer .footer-flex-container-right{
-  text-align: center;
-  margin-right: 1vh;
   align-self: center;
 }
 
 .footer .footer-flex-container-right a {
-  margin-left: 2vh;
+  margin-left: 3vw;
   color: var(--font);
 }
 
 .footer .footer-flex-container-right a:hover {
   text-decoration: underline solid 0.1px var(--logo);
+}
+
+svg:hover {
+  cursor: pointer;
 }
 
 @media  screen and (max-width: 900px){
