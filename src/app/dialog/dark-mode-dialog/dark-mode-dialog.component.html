@@ -1,0 +1,23 @@
+<h2 mat-dialog-title>Dark Mode</h2>
+
+<mat-dialog-content>
+  <h6>Functionality</h6>
+  <p>Our website now supports Dark Mode based on your operating system's preferences! 
+    If your operating system is set to Dark Mode, our site will automatically adapt to match your preference. 
+    This ensures a seamless and comfortable browsing experience, whether you're working during the day or night.</p>
+  <p>This feature is compatible with all browsers using the latest version.</p>
+
+  <h6>Customize your experience</h6>
+  <p>You also have the option to override your operating system preferences by selecting your preferred color scheme directly on our website. 
+    If you choose to do so, your preference will be stored in your browser's local storage as "preferred-dark-mode". 
+    This means your choice will persist and be remembered for future visits.</p>
+
+  <a href="https://support.microsoft.com/en-us/windows/change-colors-in-windows-d26ef4d6-819a-581c-1581-493cfcc005fe#:~:text=in%20Dark%20mode-,Select%20Start%20%3E%20Settings,Select%20Personalization%20%3E%20Colors.&text=In%20the%20list%20for%20Choose%20your%20mode%2C%20select%20Dark." target="_blank">How to set dark mode on Windows</a> <br />
+  <a href="https://frontpagelinux.com/tutorials/ubuntu-20-04-full-dark-mode-guide/" target="_blank">How to set dark mode on ubuntu</a> <br />
+  <a href="https://support.apple.com/en-gb/guide/mac-help/mchl52e1c2d2/mac" target="_blank">How to set dark mode on macOS</a>
+</mat-dialog-content>
+
+<mat-dialog-actions>
+  <button mat-button mat-dialog-close cdkFocusInitial>Close</button>
+  <button mat-button (click)="submitDarkMode()">Continue</button>
+</mat-dialog-actions>

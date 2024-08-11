@@ -1,7 +1,7 @@
 import { Inject, inject, Injectable, PLATFORM_ID, signal } from '@angular/core';
 import { Theme } from '../models/theme-constants';
 import { LocalStorageService } from './local-storage.service';
-import { LOCAL_STORAGE_PREFERRED_THEME, THEME } from '../models/general-constants';
+import { DARK_MODE, LOCAL_STORAGE_PREFERRED_DARK_MODE, LOCAL_STORAGE_PREFERRED_THEME, THEME } from '../models/general-constants';
 import { isPlatformBrowser } from '@angular/common';
 
 @Injectable({
@@ -10,20 +10,46 @@ import { isPlatformBrowser } from '@angular/common';
 export class ThemeService {
   _localStorage = inject(LocalStorageService);
 
-  theme = signal(Theme.Light);
+  public theme = signal(Theme.Default);
+  public darkMode = signal(true);
 
-  constructor(
-    @Inject(PLATFORM_ID) private platformId: any) {}  
+  constructor(@Inject(PLATFORM_ID) private platformId: any) {}
 
   public setTheme(value: Theme): void {
     this.theme.set(value);
-    this.apply(value);
+    this.applyTheme(value);
   }
 
-  private apply(value: Theme): void {
+  public setDarkMode(input?: boolean): void {
+    if(input !== undefined)
+    {
+      this.darkMode.set(input);
+      this.applyDarkMode(input);
+    } 
+    else 
+    {
+      var newValue: boolean = !this.darkMode();
+      this.darkMode.set(newValue);
+      this.applyDarkMode(newValue);
+    }
+  }
+
+  private applyTheme(value: Theme): void {
     if(isPlatformBrowser(this.platformId)) {
       window.document.documentElement.setAttribute(THEME, value);
       this._localStorage.SetItem(LOCAL_STORAGE_PREFERRED_THEME, value);
+    }
+  }
+
+  private applyDarkMode(value: boolean): void {
+    if(isPlatformBrowser(this.platformId)) {
+      window.document.documentElement.setAttribute(DARK_MODE, String(value));
+    }
+  }
+
+  public applyDarkModeLocalStorage(value: boolean): void {
+    if(isPlatformBrowser(this.platformId)) {
+      this._localStorage.SetItem(LOCAL_STORAGE_PREFERRED_DARK_MODE, String(value));
     }
   }
 }

@@ -15,7 +15,7 @@ p {
 .country {
     width: calc(20px + 5vh);
     height: calc(20px + 5vh);
-    border-radius: 5%;
+    border-radius: 33%;
     cursor: pointer;
-    border: 0.1px solid var(--font);
+    border: 0.1px solid var(--bg-secondary);
 }

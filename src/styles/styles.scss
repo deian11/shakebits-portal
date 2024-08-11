@@ -1,20 +1,5 @@
 @import './themes.scss';
 
-
-$snowman: #fbfbfb;
-$whitey: #f7f7f7;
-$karl: #edeced;
-$clooney: #c1bec1;
-$gandalf: #979197;
-$teflon: #554d56;
-$yellow: #fecf33;
-$light-orange: #fdbd39;
-$orange: #f69833;
-$peach: #ee6723;
-$green: #c8cf2d;
-$turquoise: #0dcfda;
-$cornflower-blue: #419bf9;
-
 p, a, b, span, label, hr, img, svg {
     color: var(--font);
     font-family: Roboto, sans-serif;
@@ -25,15 +10,11 @@ p, a, b, span, label, hr, img, svg {
 h1, h2, h3, h4, h5, h6 {
     color: var(--font);
     font-family: Roboto, sans-serif;
-    font-weight: 400;
+    font-weight: 100;
     margin-bottom: 0;
 }
 
-span {
-    text-decoration: none;
-}
-
-a {
+a, span {
     text-decoration: none;
 }
 
@@ -42,7 +23,17 @@ a:hover {
     cursor: pointer;
 }
 
-// button:hover {
-//     border: solid 1px var(--logo);
-//     opacity: 0.5;
-// }
+
+// $snowman: #fbfbfb;
+// $whitey: #f7f7f7;
+// $karl: #edeced;
+// $clooney: #c1bec1;
+// $gandalf: #979197;
+// $teflon: #554d56;
+// $yellow: #fecf33;
+// $light-orange: #fdbd39;
+// $orange: #f69833;
+// $peach: #ee6723;
+// $green: #c8cf2d;
+// $turquoise: #0dcfda;`
+// $cornflower-blue: #419bf9;

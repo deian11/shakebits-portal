@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
-import { MatDialogActions, MatDialogClose, MatDialogContent, MatDialogTitle } from '@angular/material/dialog';
+import { MatDialogModule } from '@angular/material/dialog';
 import {MatButtonModule} from '@angular/material/button';
 import { ThemeService } from '../../core/services/theme.service';
 import { Theme } from '../../core/models/theme-constants';
@@ -10,13 +10,9 @@ import { Theme } from '../../core/models/theme-constants';
   styleUrl: './theme-dialog.component.scss',
   standalone: true,
   imports: [
-    MatDialogContent,
-    MatDialogActions,
-    MatDialogTitle, 
-    MatDialogClose, 
     MatButtonModule,
-  ],
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    MatDialogModule,
+  ]
 })
 export class ThemeDialogComponent {
   _theme = inject(ThemeService);
