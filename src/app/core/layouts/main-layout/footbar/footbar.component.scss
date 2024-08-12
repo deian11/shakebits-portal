@@ -1,4 +1,4 @@
-@import '@styles/styles.scss';
+@import "@styles/text-format.scss";
 
 .footer {
   position: fixed;
@@ -53,8 +53,9 @@ svg:hover {
   }
 }
 
-@media  screen and (max-width: 450px){
+@media  screen and (max-width: 500px){
   .footer-flex-container-left {
     display: none;
   }
 }
+

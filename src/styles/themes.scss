@@ -11,14 +11,14 @@
     --font: #{mat.get-theme-color(default-m3-theme.$light-theme, neutral-variant, 20)}; // ON SURFACE
     --logo: #{mat.get-theme-color(default-m3-theme.$light-theme, neutral-variant, 10)}; // PRIMARY
     background-color: var(--bg);
-    @include mat.all-component-themes(default-m3-theme.$light-theme);
+    @include mat.all-component-colors(default-m3-theme.$light-theme);
 }
 [theme="default"][darkmode="true"] {
     --bg: #{mat.get-theme-color(default-m3-theme.$dark-theme, neutral-variant, 20)}; //SURFACE BRIGHT
     --bg-secondary: #{mat.get-theme-color(default-m3-theme.$dark-theme, neutral-variant, 10)}; //SURFACE DIM
     --font: #{mat.get-theme-color(default-m3-theme.$dark-theme, neutral-variant, 90)}; // ON SURFACE VAR CUSTOM 
     --logo: #{mat.get-theme-color(blue-m3-theme.$dark-theme, neutral-variant, 99)}; // PRIMARY
-    @include mat.all-component-themes(default-m3-theme.$dark-theme);
+    @include mat.all-component-colors(default-m3-theme.$dark-theme);
     background-color: var(--bg);
 }
 
@@ -28,13 +28,13 @@
     --font: #{mat.get-theme-color(blue-m3-theme.$light-theme, neutral, 10)}; // ON SURFACE
     --logo: #{mat.get-theme-color(blue-m3-theme.$light-theme, primary, 40)}; // PRIMARY
     background-color: var(--bg);
-    @include mat.all-component-themes(blue-m3-theme.$light-theme);
+    @include mat.all-component-colors(blue-m3-theme.$light-theme);
 }
 [theme="sky"][darkmode="true"] {
     --bg: #{mat.get-theme-color(blue-m3-theme.$dark-theme, neutral, 6)}; //SURFACE BRIGHT
     --bg-secondary: #{mat.get-theme-color(blue-m3-theme.$dark-theme, neutral, 4)}; //SURFACE DIM
     --font: #{mat.get-theme-color(blue-m3-theme.$dark-theme, neutral-variant, 80)}; // ON SURFACE VAR CUSTOM 
     --logo: #{mat.get-theme-color(blue-m3-theme.$dark-theme, primary, 40)};
-    @include mat.all-component-themes(blue-m3-theme.$dark-theme);
+    @include mat.all-component-colors(blue-m3-theme.$dark-theme);
     background-color: var(--bg);
 }

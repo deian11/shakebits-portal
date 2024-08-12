@@ -1,7 +1,18 @@
-<app-navbar />
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XMVQ46W5P0"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XMVQ46W5P0');
+</script>
 
-<div class="body">
-    <router-outlet />
-</div>
 
-<app-footbar />
+@defer () {
+  <app-navbar />
+  <div class="body">
+      <router-outlet />
+  </div>
+  <app-footbar />
+} @placeholder (minimum 450ms) {
+  <app-loading-layout />
+}

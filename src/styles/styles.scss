@@ -1,28 +1,7 @@
+@import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
 @import './themes.scss';
-
-p, a, b, span, label, hr, img, svg {
-    color: var(--font);
-    font-family: Roboto, sans-serif;
-    font-weight: 100;
-    margin-bottom: 0;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    color: var(--font);
-    font-family: Roboto, sans-serif;
-    font-weight: 100;
-    margin-bottom: 0;
-}
-
-a, span {
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline solid 0.1px var(--logo);
-    cursor: pointer;
-}
-
+@import './text-format.scss';
 
 // $snowman: #fbfbfb;
 // $whitey: #f7f7f7;
