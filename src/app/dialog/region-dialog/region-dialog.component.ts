@@ -4,6 +4,7 @@ import { MatDialogModule, MatDialogRef } from '@angular/material/dialog';
 import { LOCAL_STORAGE_PREFERRED_REGION } from '../../core/models/general-constants';
 import { BaseUrl } from '@models/urls.models';
 import { LocalStorageService } from '../../core/services/local-storage.service';
+import { provideClientHydration } from '@angular/platform-browser';
 
 export interface DialogData {
   animal: string;
@@ -18,7 +19,7 @@ export interface DialogData {
   imports: [
     MatButtonModule,
     MatDialogModule,
-  ],
+  ]
 })
 export class RegionDialogComponent {
   readonly _localStorage = inject(LocalStorageService);

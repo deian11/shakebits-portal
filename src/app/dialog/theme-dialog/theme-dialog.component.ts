@@ -12,7 +12,8 @@ import { Theme } from '../../core/models/theme-constants';
   imports: [
     MatButtonModule,
     MatDialogModule,
-  ]
+  ],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ThemeDialogComponent {
   _theme = inject(ThemeService);

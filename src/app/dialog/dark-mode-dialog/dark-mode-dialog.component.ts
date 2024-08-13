@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDialogContent, MatDialogModule, MatDialogRef } from '@angular/material/dialog';
 import { ThemeService } from '../../core/services/theme.service';
@@ -12,7 +12,8 @@ import { ThemeService } from '../../core/services/theme.service';
     MatButtonModule,
     MatDialogModule,
     MatDialogContent
-  ]
+  ],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class DarkModeDialogComponent {
   readonly dialogRef = inject(MatDialogRef<DarkModeDialogComponent>);

@@ -69,8 +69,8 @@ export class AppComponent {
       return;
     }
 
-    if(window.location.pathname[1].toLocaleLowerCase() === region[0].toLocaleLowerCase() &&
-    window.location.pathname[2].toLocaleLowerCase() === region[1].toLocaleLowerCase())
+    if(window.location.pathname[1].toLowerCase() === region[0].toLowerCase() &&
+    window.location.pathname[2].toLowerCase() === region[1].toLowerCase())
     {
       return;
     }
