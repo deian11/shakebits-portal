@@ -6,7 +6,7 @@ if(isDevMode())
 {
     API_URL = 'localhost:4200';
 } else {
-    API_URL = '//www.shakebits.eu/';
+    API_URL = '//www.shakebits.eu';
 }
 
 export abstract class BaseUrl {
