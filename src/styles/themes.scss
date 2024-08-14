@@ -1,40 +1,61 @@
 @use '@angular/material' as mat;
 
 @use './blue-m3-theme.scss';
-@use './default-m3-theme.scss';
+@use './basic-m3-theme.scss';
+@use './neon-m3-theme.scss';
 
 @include mat.core();
 
-[theme="default"][darkmode="false"] {
-    --bg: #{mat.get-theme-color(default-m3-theme.$light-theme, neutral-variant, 95)}; //SURFACE BRIGHT
-    --bg-secondary: #{mat.get-theme-color(default-m3-theme.$light-theme, neutral-variant, 70)}; //SURFACE DIM
-    --font: #{mat.get-theme-color(default-m3-theme.$light-theme, neutral-variant, 20)}; // ON SURFACE
-    --logo: #{mat.get-theme-color(default-m3-theme.$light-theme, neutral-variant, 10)}; // PRIMARY
+//basic
+[theme="basic"][darkmode="false"] {
+    --bg: #{mat.get-theme-color(basic-m3-theme.$light-theme, neutral-variant, 95)}; 
+    --bg-secondary: #{mat.get-theme-color(basic-m3-theme.$light-theme, neutral-variant, 70)}; 
+    --font: #{mat.get-theme-color(basic-m3-theme.$light-theme, neutral-variant, 0)}; 
+    --logo: #{mat.get-theme-color(basic-m3-theme.$light-theme, neutral-variant, 10)}; 
     background-color: var(--bg);
-    @include mat.all-component-colors(default-m3-theme.$light-theme);
+    @include mat.all-component-colors(basic-m3-theme.$light-theme);
 }
-[theme="default"][darkmode="true"] {
-    --bg: #{mat.get-theme-color(default-m3-theme.$dark-theme, neutral-variant, 20)}; //SURFACE BRIGHT
-    --bg-secondary: #{mat.get-theme-color(default-m3-theme.$dark-theme, neutral-variant, 10)}; //SURFACE DIM
-    --font: #{mat.get-theme-color(default-m3-theme.$dark-theme, neutral-variant, 90)}; // ON SURFACE VAR CUSTOM 
-    --logo: #{mat.get-theme-color(blue-m3-theme.$dark-theme, neutral-variant, 99)}; // PRIMARY
-    @include mat.all-component-colors(default-m3-theme.$dark-theme);
+[theme="basic"][darkmode="true"] {
+    --bg: #{mat.get-theme-color(basic-m3-theme.$dark-theme, neutral-variant, 20)}; 
+    --bg-secondary: #{mat.get-theme-color(basic-m3-theme.$dark-theme, neutral-variant, 0)};
+    --font: #{mat.get-theme-color(basic-m3-theme.$dark-theme, neutral-variant, 100)}; 
+    --logo: #{mat.get-theme-color(blue-m3-theme.$dark-theme, neutral-variant, 99)}; 
+    @include mat.all-component-colors(basic-m3-theme.$dark-theme);
     background-color: var(--bg);
 }
 
+//sky
 [theme="sky"][darkmode="false"] {
-    --bg: #{mat.get-theme-color(blue-m3-theme.$light-theme, neutral, 98)}; //SURFACE BRIGHT
-    --bg-secondary: #{mat.get-theme-color(blue-m3-theme.$light-theme, neutral, 87)}; //SURFACE DIM
-    --font: #{mat.get-theme-color(blue-m3-theme.$light-theme, neutral, 10)}; // ON SURFACE
-    --logo: #{mat.get-theme-color(blue-m3-theme.$light-theme, primary, 40)}; // PRIMARY
+    --bg: #{mat.get-theme-color(blue-m3-theme.$light-theme, neutral-variant, 90)};
+    --bg-secondary: #{mat.get-theme-color(blue-m3-theme.$light-theme, neutral-variant, 70)};
+    --font: #{mat.get-theme-color(blue-m3-theme.$light-theme, neutral, 0)};
+    --logo: #{mat.get-theme-color(blue-m3-theme.$light-theme, primary, 40)};
     background-color: var(--bg);
     @include mat.all-component-colors(blue-m3-theme.$light-theme);
 }
 [theme="sky"][darkmode="true"] {
-    --bg: #{mat.get-theme-color(blue-m3-theme.$dark-theme, neutral, 6)}; //SURFACE BRIGHT
-    --bg-secondary: #{mat.get-theme-color(blue-m3-theme.$dark-theme, neutral, 4)}; //SURFACE DIM
-    --font: #{mat.get-theme-color(blue-m3-theme.$dark-theme, neutral-variant, 80)}; // ON SURFACE VAR CUSTOM 
-    --logo: #{mat.get-theme-color(blue-m3-theme.$dark-theme, primary, 40)};
+    --bg: #{mat.get-theme-color(blue-m3-theme.$dark-theme, neutral, 24)};
+    --bg-secondary: #{mat.get-theme-color(blue-m3-theme.$dark-theme, neutral, 4)}; 
+    --font: #{mat.get-theme-color(blue-m3-theme.$dark-theme, neutral-variant, 100)};
+    --logo: #{mat.get-theme-color(blue-m3-theme.$dark-theme, neutral, 90)};
     @include mat.all-component-colors(blue-m3-theme.$dark-theme);
+    background-color: var(--bg);
+}
+
+//neon
+[theme="neon"][darkmode="false"] {
+    --bg: #{mat.get-theme-color(neon-m3-theme.$light-theme, neutral-variant, 90)};
+    --bg-secondary: #{mat.get-theme-color(neon-m3-theme.$light-theme, neutral-variant, 70)};
+    --font: #{mat.get-theme-color(neon-m3-theme.$light-theme, neutral, 0)};
+    --logo: #{mat.get-theme-color(neon-m3-theme.$light-theme, primary, 40)};
+    background-color: var(--bg);
+    @include mat.all-component-colors(neon-m3-theme.$light-theme);
+}
+[theme="neon"][darkmode="true"] {
+    --bg: #{mat.get-theme-color(neon-m3-theme.$dark-theme, neutral, 24)};
+    --bg-secondary: #{mat.get-theme-color(neon-m3-theme.$dark-theme, neutral, 4)}; 
+    --font: #{mat.get-theme-color(neon-m3-theme.$dark-theme, neutral-variant, 100)};
+    --logo: #{mat.get-theme-color(neon-m3-theme.$dark-theme, neutral, 90)};
+    @include mat.all-component-colors(neon-m3-theme.$dark-theme);
     background-color: var(--bg);
 }

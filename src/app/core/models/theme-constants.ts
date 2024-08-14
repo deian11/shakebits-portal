@@ -1,4 +1,5 @@
 export enum Theme {
-    Default = 'default',
-    Sky = 'sky'
+    Basic = 'basic',
+    Sky = 'sky',
+    Neon = 'neon'
 }

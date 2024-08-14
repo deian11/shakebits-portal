@@ -19,7 +19,7 @@
                 <path [attr.d]="getSvgPath()"/>
             </svg>
             <a (click)="openThemeModal()" i18n>Themes</a>
-            <a (click)="openRegionModal()" i18n><img src="/flags/{{region?.[0]?.regionCode}}.svg" style="height: 13px; width: 13px; margin-bottom: 2.5px;"/>{{region?.[0]?.regionName}}</a>
+            <a (click)="openRegionModal()"><img src="/flags/{{region?.[0]?.regionCode}}.svg" style="height: 13px; width: 13px; margin-bottom: 2.5px;"/><span i18n>{{region?.[0]?.regionName}}</span></a>
         </div>
     </div>
 }

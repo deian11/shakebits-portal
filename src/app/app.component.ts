@@ -33,10 +33,10 @@ export class AppComponent {
       {
         this._theme.setTheme(<Theme>localStoragePreferredTheme as unknown as Theme);
       } else {
-        this._theme.setTheme(Theme.Default);
+        this._theme.setTheme(Theme.Basic);
       }
     } else {
-      this._theme.setTheme(Theme.Default);
+      this._theme.setTheme(Theme.Basic);
     }
   }
 

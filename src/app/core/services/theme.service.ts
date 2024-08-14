@@ -10,7 +10,7 @@ import { isPlatformBrowser } from '@angular/common';
 export class ThemeService {
   _localStorage = inject(LocalStorageService);
 
-  public theme = signal(Theme.Default);
+  public theme = signal(Theme.Basic);
   public darkMode = signal(true);
 
   constructor(@Inject(PLATFORM_ID) private platformId: any) {}
