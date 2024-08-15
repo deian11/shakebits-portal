@@ -6,9 +6,9 @@
 }
 
 .logo {
-  font: 100 52px 'roboto-thin';
+  font: 100 53px 'roboto-thin';
   margin-top: -28px;
-  margin-bottom: -32px;
+  margin-bottom: -31px;
   margin-left: -2px;
   color: var(--logo);
 }
@@ -31,4 +31,5 @@ button {
 mat-icon {
   cursor: pointer;
   margin-right: 2vh;
+  scale: 1.5;
 }

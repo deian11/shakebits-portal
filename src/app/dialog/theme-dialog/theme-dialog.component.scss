@@ -1,6 +1,5 @@
 p {
     text-align: center;
-    font-size: calc(2px + 1vh);
     cursor: pointer;
 }
 
@@ -14,7 +13,7 @@ p {
     min-width: calc(20px + 5vh);
     width: 100%;
     aspect-ratio: 1/1;
-    background-image: conic-gradient(#1f1f1f, #979197, #fff);
+    background-image: conic-gradient(#222, #fff);
     border-radius: 33%;
     cursor: pointer;
     border: 0.1px solid var(--bg-secondary);
@@ -24,7 +23,7 @@ p {
     min-width: calc(20px + 5vh);
     width: 100%;
     aspect-ratio: 1/1;
-    background-image: conic-gradient(#a4b1ad, #65a179, #fff);
+    background-image: conic-gradient(#004f58, #fff);
     border-radius: 33%;
     cursor: pointer;
     border: 0.1px solid var(--bg-secondary);
@@ -34,7 +33,7 @@ p {
     min-width: calc(20px + 5vh);
     width: 100%;
     aspect-ratio: 1/1;
-    background-image: conic-gradient(#3e578d, #759eca, #fff);
+    background-image: conic-gradient(#001a42, #fff);
     border-radius: 33%;
     cursor: pointer;
     border: 0.1px solid var(--bg-secondary);

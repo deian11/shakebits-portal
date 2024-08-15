@@ -1,17 +1,19 @@
 import { Component, inject } from '@angular/core';
+import { MainLayoutService } from '../main-layout.service';
+import { DialogService } from '../../../services/dialog.service';
 import { RegionService } from '../../../services/region.service';
 import { ThemeService } from '../../../services/theme.service';
-import { DialogService } from '../../../services/dialog.service';
 
 @Component({
-  selector: 'app-footbar',
-  templateUrl: './footbar.component.html',
-  styleUrl: './footbar.component.scss'
+  selector: 'app-sidenav-body',
+  templateUrl: './sidenav-body.component.html',
+  styleUrl: './sidenav-body.component.scss'
 })
-export class FootbarComponent {
-  protected _regionService = inject(RegionService);
-  protected _theme = inject(ThemeService);
+export class SidenavBodyComponent {
+  protected _mainLayoutService = inject(MainLayoutService);
   protected _dialogService = inject(DialogService);
+  protected _regionService = inject(RegionService);
+  private _theme = inject(ThemeService);
 
   getSvgPath(): string {
     if(this._theme.darkMode())

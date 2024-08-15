@@ -12,12 +12,14 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatRadioModule} from '@angular/material/radio';
 
 import {MatIconModule} from '@angular/material/icon';
+import { SidenavBodyComponent } from './sidenav-body/sidenav-body.component';
 
 @NgModule({
     declarations: [
         NavbarComponent,
         MainLayoutComponent,
-        FootbarComponent
+        FootbarComponent,
+        SidenavBodyComponent
     ],
     imports: [
         SharedModule,
@@ -29,7 +31,6 @@ import {MatIconModule} from '@angular/material/icon';
         MatRadioModule, 
         FormsModule, 
         ReactiveFormsModule,
-
         MatIconModule
     ],
 })

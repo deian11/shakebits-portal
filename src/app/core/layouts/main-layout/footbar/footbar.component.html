@@ -12,14 +12,15 @@
             <svg 
                 xmlns="http://www.w3.org/2000/svg" 
                 height="18px" viewBox="0 -960 960 960" 
-                (click)="openDarkModeModal()" 
+                (click)="this._dialogService.openDarkModeModal()" 
                 width="18px" 
                 style="margin-bottom: 2.5px;" 
                 fill="var(--font)">
                 <path [attr.d]="getSvgPath()"/>
             </svg>
-            <a (click)="openThemeModal()" i18n>Themes</a>
-            <a (click)="openRegionModal()"><img src="/flags/{{region?.[0]?.regionCode}}.svg" class="region-flag" /><span i18n>{{region?.[0]?.regionName}}</span></a>
+            
+            <a (click)="this._dialogService.openThemeModal()" i18n>Themes</a>
+            <a (click)="this._dialogService.openRegionModal()"><img src="/flags/{{this._regionService.GetCurrentRegion()?.[0]?.regionCode}}.svg" class="region-flag" /><span i18n>{{this._regionService.GetCurrentRegion()?.[0]?.regionName}}</span></a>
         </div>
     </div>
 }

@@ -115,6 +115,7 @@
             ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/material-icons/iconfont/material-icons.scss",
               "src/styles/styles.scss"
             ],
             "scripts": [
@@ -375,6 +376,7 @@
             ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/material-icons/iconfont/material-icons.scss",
               "src/styles/styles.scss"
             ],
             "scripts": [

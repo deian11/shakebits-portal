@@ -1,26 +1,17 @@
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XMVQ46W5P0"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-XMVQ46W5P0');
-</script>
-
-<mat-sidenav-container class="sidenav-container">
-  <mat-sidenav 
-    #sidenav 
-    mode="over" 
-    [opened]="this._mainLayoutService.displaySideNav()" 
-    (closed)="this._mainLayoutService.displaySideNav.set(false)">
-    <h2>Sidenav</h2>
-  </mat-sidenav>
-
-  <app-navbar />
-  <div class="body">
-      <router-outlet />
-  </div>
-  <app-footbar />
-</mat-sidenav-container>
 @defer () {
-
+  <mat-sidenav-container class="sidenav-container">
+    
+    <mat-sidenav #sidenav mode="over" [opened]="this._mainLayoutService.displaySideNav()" (closed)="this._mainLayoutService.displaySideNav.set(false)">
+      <app-sidenav-body />
+    </mat-sidenav>
+    
+    <app-navbar />
+    
+    <div class="body">
+        <router-outlet />
+    </div>
+    
+    <app-footbar />
+    
+  </mat-sidenav-container>
 }
