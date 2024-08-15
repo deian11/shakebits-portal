@@ -7,17 +7,30 @@ import { FootbarComponent } from "./footbar/footbar.component";
 import { MatButtonModule } from "@angular/material/button";
 import { LoadingLayoutComponent } from "../loading-layout/loading-layout.component";
 
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatRadioModule} from '@angular/material/radio';
+
+import {MatIconModule} from '@angular/material/icon';
+
 @NgModule({
     declarations: [
         NavbarComponent,
         MainLayoutComponent,
-        FootbarComponent,
+        FootbarComponent
     ],
     imports: [
         SharedModule,
         MainLayoutRoutingModule,
         MatButtonModule,
-        LoadingLayoutComponent
+        LoadingLayoutComponent,
+        MatSidenavModule, 
+        MatButtonModule, 
+        MatRadioModule, 
+        FormsModule, 
+        ReactiveFormsModule,
+
+        MatIconModule
     ],
 })
-export class MainLayoutModule { }
+export class MainLayoutModule {}

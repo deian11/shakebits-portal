@@ -47,6 +47,13 @@ svg:hover {
   cursor: pointer;
 }
 
+.region-flag {
+  height: 13px;
+  width: 13px;
+  margin-bottom: 2.5px;
+  margin-right: 2.5px;
+}
+
 @media  screen and (max-width: 900px){
   .footer-flex-container-center {
     display: none;

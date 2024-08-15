@@ -1,9 +1,16 @@
+.sidenav-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--bg);
+}
+
 .body {
   padding-left: 2vw;
   padding-right: 2vw;
-  
-  padding-top: 4vh;
-  padding-bottom: 30px;
-
+  padding-top: 2vh;
+  padding-bottom: 4vw;
   background-color: var(--bg);
 }

@@ -1,6 +1,6 @@
 p {
     text-align: center;
-    font-size: 12px;
+    font-size: calc(2px + 1vh);
     cursor: pointer;
 }
 
@@ -11,8 +11,9 @@ p {
 }
 
 .default {
-    width: calc(20px + 5vh);
-    height: calc(20px + 5vh);
+    min-width: calc(20px + 5vh);
+    width: 100%;
+    aspect-ratio: 1/1;
     background-image: conic-gradient(#1f1f1f, #979197, #fff);
     border-radius: 33%;
     cursor: pointer;
@@ -20,8 +21,9 @@ p {
 }
 
 .emerald {
-    width: calc(20px + 5vh);
-    height: calc(20px + 5vh);
+    min-width: calc(20px + 5vh);
+    width: 100%;
+    aspect-ratio: 1/1;
     background-image: conic-gradient(#a4b1ad, #65a179, #fff);
     border-radius: 33%;
     cursor: pointer;
@@ -29,8 +31,9 @@ p {
 }
 
 .sapphire {
-    width: calc(20px + 5vh);
-    height: calc(20px + 5vh);
+    min-width: calc(20px + 5vh);
+    width: 100%;
+    aspect-ratio: 1/1;
     background-image: conic-gradient(#3e578d, #759eca, #fff);
     border-radius: 33%;
     cursor: pointer;

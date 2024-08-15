@@ -1,4 +1,11 @@
 <div class="navbar">
     <p class="logo" routerLink="">Shakebits <span class="location">Portal</span></p>
     <!-- <button mat-raised-button routerLink="sign-in" i18n>Sign In</button> -->
+    <!-- <button mat-button (click)="this._mainLayoutService.displaySideNav.set(!this._mainLayoutService.displaySideNav())">
+    Toggle</button> -->
+    <mat-icon 
+        aria-label="Menu icon" 
+        fontIcon="menu"
+        class="icon"
+        (click)="this._mainLayoutService.displaySideNav.set(!this._mainLayoutService.displaySideNav())" />
 </div>

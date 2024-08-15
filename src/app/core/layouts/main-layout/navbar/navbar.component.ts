@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { MainLayoutService } from '../main-layout.service';
 
 @Component({
   selector: 'app-navbar',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './navbar.component.scss'
 })
 export class NavbarComponent {
-
+  protected _mainLayoutService = inject(MainLayoutService);
 }
