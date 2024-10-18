@@ -1,7 +1,7 @@
 @defer () {
   <mat-sidenav-container class="sidenav-container">
     
-    <mat-sidenav #sidenav mode="over" [opened]="this._mainLayoutService.displaySideNav()" (closed)="this._mainLayoutService.displaySideNav.set(false)">
+    <mat-sidenav #sidenav mode="over" position="end" [opened]="this._mainLayoutService.displaySideNav()" (closed)="this._mainLayoutService.displaySideNav.set(false)">
       <app-sidenav-body />
     </mat-sidenav>
     

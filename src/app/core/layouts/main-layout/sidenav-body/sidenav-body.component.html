@@ -1,5 +1,6 @@
 
 <div class="sidenav-container">
+    <button mat-fab extended [routerLink]="'stories/'" (click)="this._mainLayoutService.displaySideNav.set(false)" i18n>Stories</button>
     <button mat-fab extended [routerLink]="'solutions'" (click)="this._mainLayoutService.displaySideNav.set(false)" i18n>Our solutions</button>
     <button mat-fab extended [routerLink]="'contact-us'" (click)="this._mainLayoutService.displaySideNav.set(false)" i18n>Contact us</button>
     <button mat-fab extended (click)="this._dialogService.openThemeModal()" i18n>Themes</button>

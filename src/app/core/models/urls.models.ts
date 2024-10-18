@@ -1,17 +1,23 @@
 import { isDevMode } from "@angular/core";
 
-let API_URL = '';
+let URL = '';
+let API_URL = 'https://api.shakebits.eu';
 
 if(isDevMode())
 {
-    API_URL = 'localhost:4200';
+    URL = 'localhost:4200';
 } else {
-    API_URL = '//www.shakebits.eu';
+    URL = '//www.shakebits.eu';
 }
 
 export abstract class BaseUrl {
-    public static readonly home = (): string => API_URL;
-    public static readonly redirect = (region: string): string => `${API_URL}/${region}/hello`;
-    public static readonly hello = (): string => `${API_URL}/hello`;
-    public static readonly ourSolutions = (): string => `${API_URL}/our-solutions`;
+    public static readonly home = (): string => URL;
+    public static readonly redirect = (region: string): string => `${URL}/${region}/hello`;
+    public static readonly hello = (): string => `${URL}/hello`;
+    public static readonly ourSolutions = (): string => `${URL}/our-solutions`;
+}
+
+export abstract class ApiUrl {
+    public static readonly news = (offset: number = 0, limit: number = 10, search: string = "", topStories: boolean = false): 
+        string =>`${API_URL}/news?offset=${offset}&limit=${limit}&search=${search}&topStories=${topStories}`;
 }

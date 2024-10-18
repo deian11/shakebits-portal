@@ -36,6 +36,7 @@ ng build (build and generate runnable in /dist)
 ng test (running unit tests)
 
 ng generate module /features/partner --route partners --module features-routing.module
+
 ng generate interceptor /core/interceptors/AuthenticationInterceptor
 ng generate service /core/services/LoadingStatus
 
