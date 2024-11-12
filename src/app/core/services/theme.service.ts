@@ -11,7 +11,7 @@ export class ThemeService {
   _localStorage = inject(LocalStorageService);
 
   public theme = signal(Theme.Basic);
-  public darkMode = signal(true);
+  public darkMode = true;
 
   constructor(@Inject(PLATFORM_ID) private platformId: any) {}
 
@@ -23,13 +23,13 @@ export class ThemeService {
   public setDarkMode(input?: boolean): void {
     if(input !== undefined)
     {
-      this.darkMode.set(input);
+      this.darkMode = input;
       this.applyDarkMode(input);
     } 
     else 
     {
-      var newValue: boolean = !this.darkMode();
-      this.darkMode.set(newValue);
+      var newValue = !this.darkMode;
+      this.darkMode = newValue;
       this.applyDarkMode(newValue);
     }
   }

@@ -8,8 +8,7 @@ import { StoryService } from './stories.service';
 @Component({
   selector: 'app-stories',
   templateUrl: './stories.component.html',
-  styleUrl: './stories.component.scss',
-  changeDetection: ChangeDetectionStrategy.OnPush
+  styleUrl: './stories.component.scss'
 })
 export class StoriesComponent implements OnInit {
   @ViewChild(MatPaginator) paginator!: MatPaginator;

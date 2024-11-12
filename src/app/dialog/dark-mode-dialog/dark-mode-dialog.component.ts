@@ -21,7 +21,7 @@ export class DarkModeDialogComponent {
 
   submitDarkMode(): void {
     this._theme.setDarkMode();
-    this._theme.applyDarkModeLocalStorage(this._theme.darkMode());
+    this._theme.applyDarkModeLocalStorage(this._theme.darkMode);
     this.dialogRef.close();
   }
 

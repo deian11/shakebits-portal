@@ -19,7 +19,7 @@ export class DialogService {
             this.openDarkModeModalApply();
         } else {
             this._theme.setDarkMode();
-            this._localStorage.SetItem(LOCAL_STORAGE_PREFERRED_DARK_MODE, String(this._theme.darkMode()));
+            this._localStorage.SetItem(LOCAL_STORAGE_PREFERRED_DARK_MODE, String(this._theme.darkMode));
         }
     }
     private async openDarkModeModalApply(): Promise<MatDialogRef<any>> {
