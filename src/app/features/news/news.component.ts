@@ -3,12 +3,14 @@ import { MatPaginator, PageEvent } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
 import { NewsItem } from './news.model';
 import { StoryService } from './news.service';
+import { MatTabChangeEvent } from '@angular/material/tabs';
 
 
 @Component({
   selector: 'app-news',
   templateUrl: './news.component.html',
-  styleUrl: './news.component.scss'
+  styleUrl: './news.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class NewsComponent implements OnInit {
   @ViewChild(MatPaginator) paginator!: MatPaginator;
@@ -30,13 +32,18 @@ export class NewsComponent implements OnInit {
     this.dataSource.paginator = this.paginator; 
   }
 
-  applyFilter(event: Event) {
-    this.filter = (event.target as HTMLInputElement).value;
+  onTabChange(event: MatTabChangeEvent) {
+    if (event.index === 0) {
+      this.topStories = false;
+    }
+    if (event.index === 1) {
+      this.topStories = true;
+    }
     this.get_data();
   }
 
-  handleTopStories(){
-    this.topStories = !this.topStories;
+  applyFilter(event: Event) {
+    this.filter = (event.target as HTMLInputElement).value;
     this.get_data();
   }
 
