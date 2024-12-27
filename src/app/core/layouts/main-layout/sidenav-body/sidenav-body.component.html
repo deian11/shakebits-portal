@@ -1,10 +1,10 @@
 
 <div class="sidenav-container">
-    <button mat-fab extended [routerLink]="'stories/'" (click)="this._mainLayoutService.displaySideNav.set(false)" i18n>Stories</button>
+    <button mat-fab extended [routerLink]="'news/'" (click)="this._mainLayoutService.displaySideNav.set(false)" i18n>News</button>
     <button mat-fab extended [routerLink]="'solutions'" (click)="this._mainLayoutService.displaySideNav.set(false)" i18n>Our solutions</button>
     <button mat-fab extended [routerLink]="'contact-us'" (click)="this._mainLayoutService.displaySideNav.set(false)" i18n>Contact us</button>
     <button mat-fab extended (click)="this._dialogService.openThemeModal()" i18n>Themes</button>
-    <button mat-fab extended (click)="this._dialogService.openRegionModal()"><img src="/flags/{{this._regionService.GetCurrentRegion()?.[0]?.regionCode}}.svg" class="region-flag" /><span i18n>{{this._regionService.GetCurrentRegion()?.[0]?.regionName}}</span></button>
+    <button mat-fab extended (click)="this._dialogService.openRegionModal()"><img src="/flags/{{this._regionService.GetCurrentRegion()?.[0]?.regionCode}}.svg" alt="" class="region-flag" /><span i18n>{{this._regionService.GetCurrentRegion()?.[0]?.regionName}}</span></button>
     <button mat-fab extended (click)="this._dialogService.openDarkModeModal()">
         <svg 
             xmlns="http://www.w3.org/2000/svg" 

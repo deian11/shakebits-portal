@@ -19,7 +19,7 @@ export class DarkModeDialogComponent {
   readonly dialogRef = inject(MatDialogRef<DarkModeDialogComponent>);
   private _theme = inject(ThemeService);
 
-  submitDarkMode(): void {
+  protected submitSystemMode(): void {
     this._theme.setDarkMode();
     this._theme.applyDarkModeLocalStorage(this._theme.darkMode);
     this.dialogRef.close();

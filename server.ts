@@ -1,6 +1,8 @@
 import { APP_BASE_HREF } from '@angular/common';
 import { CommonEngine } from '@angular/ssr';
 import express from 'express';
+import compression from 'compression';
+import cookieParser from 'cookie-parser';
 import { fileURLToPath } from 'node:url';
 import { dirname, join, resolve } from 'node:path';
 import AppServerModule from './src/main.server';
@@ -13,6 +15,21 @@ export function app(): express.Express {
   const indexHtml = join(serverDistFolder, 'index.server.html');
 
   const commonEngine = new CommonEngine();
+
+  // Enable compression middleware
+  server.use(compression());
+  // Enable cookie parser middleware
+  server.use(cookieParser());
+
+  // Example of setting a cookie with the SameSite attribute
+  server.use((req, res, next) => {
+    res.cookie('exampleCookie', 'cookieValue', {
+      httpOnly: true,
+      secure: true,
+      sameSite: 'none'
+    });
+    next();
+  });
 
   server.set('view engine', 'html');
   server.set('views', browserDistFolder);

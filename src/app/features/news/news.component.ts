@@ -1,16 +1,16 @@
 import { ChangeDetectionStrategy, Component, inject, OnInit, ViewChild } from '@angular/core';
 import { MatPaginator, PageEvent } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
-import { StoryItem } from './stories.model';
-import { StoryService } from './stories.service';
+import { NewsItem } from './news.model';
+import { StoryService } from './news.service';
 
 
 @Component({
-  selector: 'app-stories',
-  templateUrl: './stories.component.html',
-  styleUrl: './stories.component.scss'
+  selector: 'app-news',
+  templateUrl: './news.component.html',
+  styleUrl: './news.component.scss'
 })
-export class StoriesComponent implements OnInit {
+export class NewsComponent implements OnInit {
   @ViewChild(MatPaginator) paginator!: MatPaginator;
 
   _storyService = inject(StoryService);
@@ -21,7 +21,7 @@ export class StoriesComponent implements OnInit {
   pageSizeOptions = [5, 10, 25];
   topStories = false;
   displayedColumns: string[] = ['title'];
-  dataSource = new MatTableDataSource<StoryItem>([]);
+  dataSource = new MatTableDataSource<NewsItem>([]);
   pageEvent: PageEvent = new PageEvent;
   filter: string = "";
 
@@ -49,7 +49,7 @@ export class StoriesComponent implements OnInit {
   }
 
   private get_data(){
-    this._storyService.getStories(this.pageIndex, this.pageSize, this.filter, this.topStories).subscribe(
+    this._storyService.getNews(this.pageIndex, this.pageSize, this.filter, this.topStories).subscribe(
       x => {
           this.dataSource.data = x.items;
           this.length = x.totalCount;

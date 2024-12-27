@@ -1,26 +1,24 @@
 <h2 mat-dialog-title i18n>Dark Mode</h2>
 
 <mat-dialog-content>
-  <h6 i18n>Functionality</h6>
-  <p i18n>Our website now supports Dark Mode based on your operating system's preferences! 
-    If your operating system is set to Dark Mode, our site will automatically adapt to match your preference. 
-    This ensures a seamless and comfortable browsing experience, whether you're working during the day or night.</p>
-  <p i18n>This feature is compatible with all browsers using the latest version.</p>
+  <p i18n>By default, syncs with the system settings.</p>
 
-  <a href="https://support.microsoft.com/en-us/windows/change-colors-in-windows-d26ef4d6-819a-581c-1581-493cfcc005fe#:~:text=in%20Dark%20mode-,Select%20Start%20%3E%20Settings,Select%20Personalization%20%3E%20Colors.&text=In%20the%20list%20for%20Choose%20your%20mode%2C%20select%20Dark." target="_blank">How to set dark mode on Windows</a> <br />
-  <a href="https://frontpagelinux.com/tutorials/ubuntu-20-04-full-dark-mode-guide/" target="_blank" i18n>How to set dark mode on ubuntu</a> <br />
+  <a href="https://support.microsoft.com/en-us/windows/change-colors-in-windows-d26ef4d6-819a-581c-1581-493cfcc005fe#:~:text=in%20Dark%20mode-,Select%20Start%20%3E%20Settings,Select%20Personalization%20%3E%20Colors.&text=In%20the%20list%20for%20Choose%20your%20mode%2C%20select%20Dark." target="_blank" i18n>How to set dark mode on Windows</a> <br />
+  <a href="https://frontpagelinux.com/tutorials/ubuntu-20-04-full-dark-mode-guide/" target="_blank" i18n>How to set dark mode on Ubuntu</a> <br />
   <a href="https://support.apple.com/en-gb/guide/mac-help/mchl52e1c2d2/mac" target="_blank" i18n>How to set dark mode on macOS</a><br />
   <a href="https://support.google.com/accessibility/android/answer/6151800?hl=en" target="_blank" i18n>How to set dark mode on Android</a><br />
-  <a href="https://support.apple.com/en-my/guide/iphone/iph60ba71065/ios" target="_blank" i18n>How to set dark mode on Iphone</a><br /><br />
-
-  <h6 i18n>Customize your experience</h6>
-  <p i18n>You also have the option to override your operating system preferences by selecting your preferred color scheme directly on our website. 
-    If you choose to do so, your preference will be stored in your browser's local storage as "preferred-dark-mode". 
+  <a href="https://support.apple.com/en-my/guide/iphone/iph60ba71065/ios" target="_blank" i18n>How to set dark mode on iPhone</a><br /><br />
+  
+  <br />
+  
+  <h6 i18n>Customize Your Experience</h6>
+  <p i18n>Override the system preference by selecting day or night mode. 
+    Your preference will be stored in your browser's local storage as "preferred-dark-mode". 
     This means your choice will persist and be remembered for future visits.</p>
 
 </mat-dialog-content>
 
 <mat-dialog-actions>
   <button mat-button mat-dialog-close cdkFocusInitial i18n>Cancel</button>
-  <button mat-button (click)="submitDarkMode()" i18n>Continue</button>
+  <button mat-button (click)="submitSystemMode()" i18n>Continue</button>
 </mat-dialog-actions>

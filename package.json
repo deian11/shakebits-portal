@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "node build.js",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:shakebits-portal": "node dist/shakebits-portal/server/server.mjs"
@@ -23,7 +23,9 @@
     "@angular/platform-server": "^18.1.0",
     "@angular/router": "^18.1.0",
     "@angular/ssr": "^18.1.0",
+    "@types/cookie-parser": "^1.4.8",
     "bootstrap": "^5.3.3",
+    "cookie-parser": "^1.4.7",
     "express": "^4.18.2",
     "material-icons": "^1.13.12",
     "rxjs": "~7.8.0",
@@ -35,15 +37,19 @@
     "@angular/cli": "^18.1.0",
     "@angular/compiler-cli": "^18.1.0",
     "@angular/localize": "^18.1.0",
+    "@types/compression": "^1.7.5",
     "@types/express": "^4.17.17",
     "@types/jasmine": "~5.1.0",
     "@types/node": "^18.18.0",
+    "cssnano": "^7.0.6",
+    "html-minifier": "^4.0.0",
     "jasmine-core": "~5.1.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
-    "typescript": "~5.5.2"
+    "typescript": "~5.5.2",
+    "uglify-js": "^3.19.3"
   }
 }
