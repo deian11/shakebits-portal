@@ -9,3 +9,6 @@
 
 // ng build --localize
 
+
+
+// ng extract-i18n --output-path src/locale/ --format json --out-file messages.json

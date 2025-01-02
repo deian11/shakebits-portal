@@ -48,8 +48,21 @@ export function appInitializerFactory(localStorageService: LocalStorageService, 
           themeService.setDarkMode(false);
         }
       }
+
+      checkCookieConsent();
     }
   };
+}
+
+function checkCookieConsent() {
+  const consent = localStorage.getItem('cookieconsent_status');
+  if (consent === 'allow') {
+    console.log('Cookies are allowed');
+    // Initialize services that require cookies
+  } else {
+    console.log('Cookies are not allowed');
+    // Disable services that require cookies
+  }
 }
 
 @NgModule({
