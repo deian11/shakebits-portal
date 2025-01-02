@@ -27,7 +27,7 @@
 //sapphire
 [theme="sapphire"][darkmode="false"] {
     @include mat.all-component-themes(sapphire-m3-theme.$light-theme);
-    --bg: #{mat.get-theme-color(sapphire-m3-theme.$light-theme, neutral-variant, 90)};
+    --bg: #{mat.get-theme-color(sapphire-m3-theme.$light-theme, neutral-variant, 95)};
     --bg-secondary: #{mat.get-theme-color(sapphire-m3-theme.$light-theme, neutral-variant, 70)};
     --font: #{mat.get-theme-color(sapphire-m3-theme.$light-theme, neutral, 0)};
     --logo: #{mat.get-theme-color(sapphire-m3-theme.$light-theme, primary, 40)};
@@ -45,7 +45,7 @@
 //emerald
 [theme="emerald"][darkmode="false"] {
     @include mat.all-component-themes(emerald-m3-theme.$light-theme);
-    --bg: #{mat.get-theme-color(emerald-m3-theme.$light-theme, neutral-variant, 90)};
+    --bg: #{mat.get-theme-color(emerald-m3-theme.$light-theme, neutral-variant, 95)};
     --bg-secondary: #{mat.get-theme-color(emerald-m3-theme.$light-theme, neutral-variant, 70)};
     --font: #{mat.get-theme-color(emerald-m3-theme.$light-theme, neutral, 0)};
     --logo: #{mat.get-theme-color(emerald-m3-theme.$light-theme, primary, 40)};
